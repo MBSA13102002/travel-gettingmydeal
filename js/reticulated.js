@@ -112,3 +112,17 @@ function Display_Popup() {
         
     }
 }
+// let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
+// formMessage.set({
+//     display:"true"
+// });
+let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
+formMessage.once('value', (snapshot) => {
+    const data = snapshot.val();
+    if(data['display']=='true'){
+        document.getElementById("enquiry").style.display="block"
+    }
+    else{
+        document.getElementById("enquiry").style.display="none"
+    }
+});
