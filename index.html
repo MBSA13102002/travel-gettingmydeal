@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href=images/logo_tab.ico type=image/x-icon>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel=stylesheet>
+    <link href='https://fonts.googleapis.com/css?family=Yeseva One|Trispace|Alatsi|Actor' rel=stylesheet>
+    <link rel=stylesheet href=/css/bootstrap.min.css>
+    <script src="js/jquery.min.js"></script>
+    <link rel=stylesheet href=/css/style.css>
+    <link rel=stylesheet href=/css/datepicker.css>
+    <link rel=stylesheet href="css/bootstrap.min.css">
+    <script src="js/date-picker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js
+        integrity=sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4
+        crossorigin=anonymous></script>
+
+    <title>Getting My Deal</title>
+</head>
+
+<script type=text/javascript>$(document).ready(()=>{$(".dropdown-menu").val("0");});</script>
+<style>
+    /* GLOBAL STYLES
+-------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #5a5a5a;
+    }
+
+
+    /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+        margin-bottom: 4rem;
+    }
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 32rem;
+    }
+
+    .carousel-item>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+    }
+
+
+    /* MARKETING CONTENT
+  -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .marketing h2 {
+        font-weight: 400;
+    }
+
+    /* rtl:begin:ignore */
+    .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+
+    /* rtl:end:ignore */
+
+
+    /* Featurettes
+  ------------------------- */
+
+    .featurette-divider {
+        margin: 5rem 0;
+        /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+        font-weight: 300;
+        line-height: 1;
+        /* rtl:remove */
+        letter-spacing: -.05rem;
+    }
+
+
+    /* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+    @media (min-width: 40em) {
+
+        /* Bump up size of carousel content */
+        .carousel-caption p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .featurette-heading {
+            font-size: 50px;
+        }
+    }
+
+    @media (min-width: 62em) {
+        .featurette-heading {
+            margin-top: 7rem;
+        }
+    }
+</style>
+<style>
+    .btn-custom {
+        background-color: #a98f6e;
+        color: black
+    }
+
+    .my-font {
+        font-family: Yeseva One
+    }
+
+    .my-font-new_1 {
+        font-size: 18px;
+        font-family: Yeseva One
+    }
+
+    .my-font-new {
+        font-size: 17px;
+        font-family: Actor
+    }
+
+    .my_form {
+        border: 1px solid black;
+        border-radius: 20px
+    }
+
+    .my-border {
+        border-radius: 20px
+    }
+
+    .my-border-pic {
+        border-radius: 10px
+    }
+
+    .my-border-new {
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 8px
+    }
+
+    .anchor {
+        color: white
+    }
+
+    .anchor:hover {
+        color: gray
+    }
+</style>
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+<!-- <body onload=Splash()> -->
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/images/logo.jpeg" alt="" width="180" height="90"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Flights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Hotels</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <div class="animate__animated animate__backInLeft card container more_imp my-5" id=splash
+            style=width:18rem;display:none>
+            <center>
+                <span type=button id=close style=position:relative;float:right onclick=removed_done()>x</span>
+                <div class=row>
+
+                    <h3 class="col-md-12 my-2" style="font-family:Yeseva One">Get In Touch</h3>
+                </div>
+                <div id=popup_block_chain>
+                    <div class=row>
+                        <div class="col-md-12 form-group">
+                            <input type=text class=form-control name=name id=popup_name placeholder=Name>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-md-12 form-group">
+                            <input type=text class=form-control name=email id=popup_email placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="dropdown col-md-12 my-1">
+                            <select class="btn btn-custom dropdown-toggle" id=popup_type_flats
+                                aria-labelledby=dropdownMenuButton1 style=color:black>
+                                <li>
+                                    <option class=dropdown-item value="CHOOSE YOUR REQUIREMENT">CHOOSE YOUR
+                                        REQUIREMENT</option>
+                                </li>
+                                <li>
+                                    <option class=dropdown-item value="2 Bhk's starting @ 28.67 lakhs">2 Bhk's
+                                        starting @ 28.67
+                                        lakhs</option>
+                                </li>
+                                <li>
+                                    <option class=dropdown-item value="3 Bhk's starting @ 36.16 lakhs">3 Bhk's
+                                        starting @ 36.16
+                                        lakhs</option>
+                                </li>
+                            </select>
+                        </div>
+                    </div>
+                    <div class=row id=popup_send_otp>
+                        <div class="col-md-12 form-group my-1">
+                            <input type=text class=form-control name=number id=popup_phone_number
+                                placeholder="Phone Number">
+                            <button type=button class="btn btn-custom my-2 px-3"
+                                onclick=Popup_Send_OTP()>SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=row id=popup_confirm_otp style=display:none>
+                    <div class="col-md-12 form-group my-1">
+                        <input type=text class=form-control name=number id=popup_verificationCode
+                            placeholder="Enter OTP">
+                        <button type=button class="btn btn-dark rounded-0 py-2 px-4" onclick=Popup_Confirm_OTP()>
+                            SUBMIT</button>
+                    </div>
+                </div>
+                <div class=row>
+                    <p class=col-md-12> By submitting this form, you agree to the privacy policy & terms and
+                        conditions</p>
+                </div>
+            </center>
+        </div>
+    </center>
+    <div class=content id=main_content>
+        <div class=container>
+            <div class="row justify-content-center">
+                <div class=col-md-10>
+                    <div class="row justify-content-center">
+                        <div class=col-md-6>
+                            <p><img src=https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
+                                    alt=Image class="img-fluid my-border"></p>
+                        </div>
+                        <div class="col-md-6 my-2">
+
+                            <div class=my_form>
+                                <div class="row mx-3">
+                                    <img src="/images/logo_2.jpeg" class="m-3 my-border" alt="" width="150" height="50">
+                                    <h3 class="col-md-12 my-2" style="font-family:Yeseva One">Book Your Flight Now!!
+                                    </h3>
+                                </div>
+                                <div id=block_chain>
+                                    <div class="row mx-3">
+                                        <div class="col-md-12 form-group">
+                                            <input type=text class=form-control name=name id=where_from
+                                                placeholder="Where From:">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-3">
+                                        <div class="col-md-12 form-group">
+                                            <input type=text class=form-control name=email id=where_to
+                                                placeholder="Where To:">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mx-3" id=send_otp>
+                                        <div class="col-md-12 form-group my-1">
+                                            <input type=text class=form-control data-provide="datepicker" name=number
+                                                id=check_in_date placeholder="Check In Date:">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-3" id=send_otp>
+                                        <div class="col-md-12 form-group my-1">
+                                            <input type=text class=form-control data-provide="datepicker" name=number
+                                                id=check_out_date placeholder="Check Out Date:">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('#datepicker').datepicker();
+                                    });
+                                </script>
+                                <button type=button class="btn btn-danger rounded-0 my-2 mx-5" onclick=Confirm_OTP()>
+                                    SUBMIT</button>
+                                <div class="row mx-3">
+                                    <p class=col-md-12> By submitting this form, you agree to the privacy policy & terms
+                                        and
+                                        conditions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class=featurette-divider>
+        <div class="container marketing">
+            <h1 class="text-center my-font my-5 " style="color:gray">Find Your Best Deals Here</h1>
+            <p class="text-muted text-center my-font my-5 ">Upto 30% OFF only on Call or Chat.</p>
+            <div class="row">
+                <div class="col-lg-4 new_border">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <h2 class="my-font my-1">London to Paris</h2>
+                    <!-- <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                    first column.</p> -->
+                    <p><a class="btn btn-danger" href="#">View Information &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 new_border">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
+                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <h2 class="my-font my-1">Las Vegas to Cancun</h2>
+                    <p><a class="btn btn-danger" href="#">View Information &raquo;</a></p>
+                </div>
+                <div class="col-lg-4 new_border">
+                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
+                        src="https://images.unsplash.com/photo-1490642914619-7955a3fd483c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=770&q=80"
+                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <h2 class="my-font my-1">New York to Dallas</h2>
+
+                    <p><a class="btn btn-danger" href="#">View Information &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+  
+
+        <main>
+            <h1 class="text-center my-font my-5 " style="color:gray">SAVE UPTO 30% ON CALL BOOKING</h1>
+            <p class="text-muted text-center my-font m-5">*Fares are round trip, Fares incl. all fuel surcharges, our
+                service fees and taxes.<br> Book 21 days in advance.A minimum Saturday night stay may be required.
+                Displayed fares <br>are based on historical data, are subject to change and cannot be guaranteed<br> at
+                the time of booking.</p>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div class="row mx-1 px-5">
+                        <div class="col">
+                            <div class="card shadow-sm my-2">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                               
+                           
+
+                                <div class="card-body">
+                                    <p class="card-text">Displayed fares are based on historical data, are subject to change and cannot be guaranteed at the time of booking</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-danger
+                                            ">View Information</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="visibility:hidden;">Edit</button>
+                                        </div>
+                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm my-2">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    src="https://images.unsplash.com/photo-1534374950034-3644ddb72710?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                
+                                
+
+                                <div class="card-body">
+                                    <p class="card-text">Displayed fares are based on historical data, are subject to change and cannot be guaranteed at the time of booking</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-danger
+                                            ">View Information</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="visibility:hidden;">Edit</button>
+                                        </div>
+                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm my-2">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                    src="https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" role="img" aria-label="Placeholder: Thumbnail"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                                   
+                             
+
+                                <div class="card-body">
+                                    <p class="card-text">Displayed fares are based on historical data, are subject to change and cannot be guaranteed at the time of booking</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-danger
+                                            ">View Information</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="visibility:hidden;">Edit</button>
+                                        </div>
+                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </main>
+
+
+    <!-- <footer id=footer class="section footer" style="color:aliceblue">
+            <div class="card text-center bg-dark">
+                <div class=card-body style=color:antiquewhite>
+                    <a href=tel:9560252011><button type=button class="btn btn-success ">Call Now
+                            !</button></a>
+                    <p><a href=T&C class=anchor>Terms & Conditions</a> <a href="privacy policy" class=anchor>Privacy
+                            Policy</a> </p>
+                    <h5 class=card-title style=color:aliceblue;font-size:15px>Copyright <i>&#xa9</i> 2021
+                        Gettingyourdeal
+                        .All rights
+                        reserved
+                    </h5>
+
+                </div>
+        </footer> -->
+    </div>
+
+    <!-- <style>
+        .float {
+            position: fixed;
+            width: 140px;
+            height: 50px;
+            bottom: 40px;
+            right: 40px;
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 10;
+            box-shadow: 2px 2px 3px #999;
+            border-radius: 10px;
+            z-index: 100
+        }
+
+        .my-float {
+            color: white;
+            margin-top: 16px
+        }
+    </style> -->
+    <!-- <a class=float id=enquiry onclick=Display_Popup()>
+        <i class=my-float>Enquire Now</i>
+    </a> -->
+    <!-- <script>setInterval(function () {
+            document.getElementById("enquiry").classList.add("animate__animated")
+            document.getElementById("enquiry").classList.add("animate__heartBeat")
+            setTimeout(function () {
+                document.getElementById("enquiry").classList.remove("animate__animated")
+                document.getElementById("enquiry").classList.remove("animate__heartBeat")
+            }, 1000);
+        }, 5000);</script> -->
+    <script src=https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js></script>
+    <script src=https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js></script>
+    <script src=https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js></script>
+    <script>var firebaseConfig = { apiKey: "AIzaSyDo2UWpbmloaJap1aFcU5JqnWwu1oqff4U", authDomain: "ska-metroville.firebaseapp.com", projectId: "ska-metroville", storageBucket: "ska-metroville.appspot.com", messagingSenderId: "773487365179", appId: "1:773487365179:web:0d2b89776619b28330a01e", measurementId: "G-6511CWCLP3" }; firebase.initializeApp(firebaseConfig); firebase.analytics();</script>
+
+
+
+</body>
+
+</html>
