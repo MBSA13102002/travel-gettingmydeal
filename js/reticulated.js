@@ -1,3 +1,6 @@
+function sai(){
+    alert("sai")
+}
 window.confirmation = false
 function Remove_Popup() {
     document.getElementById("splash").classList.add("animate__zoomOutDown");
