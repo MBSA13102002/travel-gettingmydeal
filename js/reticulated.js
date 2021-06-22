@@ -46,7 +46,7 @@ function Display_Popup() {
         document.getElementById("splash").classList.remove("animate__zoomOutDown");
         document.getElementById("main_content").classList.add("main_imp");
         document.getElementById("splash").style.display = "block";
-        document.getElementById("splash").style.top = (window.pageYOffset-100).toString() + 'px';
+        document.getElementById("splash").style.top = (window.pageYOffset-60).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
