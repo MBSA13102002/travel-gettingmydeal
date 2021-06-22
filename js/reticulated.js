@@ -117,7 +117,7 @@ function Display_Popup() {
 //     display:"true"
 // });
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
-formMessage.once('value', (snapshot) => {
+formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
     if(data['display']=='true'){
         document.getElementById("enquiry").style.display="block"
