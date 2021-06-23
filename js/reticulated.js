@@ -216,6 +216,9 @@ function New_Lead_Collection(){
     }
 
 }
+function getResolution() {
+    alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+}
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
@@ -238,6 +241,3 @@ formMessaging.on('value', (snapshot) => {
     window.tagline = data['content'];
     document.getElementById("tagline").innerHTML=tagline;
 });
-function getResolution() {
-    alert("Your screen resolution is: " + screen.width + "x" + screen.height);
-}
