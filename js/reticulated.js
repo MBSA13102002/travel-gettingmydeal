@@ -1,28 +1,43 @@
-function sai(){
-    document.getElementById("block_chain").style.display="none";
-    document.getElementById("search_process").style.display="block";
-    setTimeout(function(){
-        var place_from = document.getElementById("where_from").value
-        document.getElementById("from").innerHTML=place_from.toUpperCase();
-        var place_to = document.getElementById("where_to").value
-        document.getElementById("to").innerHTML=place_to.toUpperCase();
-        var check_in = document.getElementById("check_in_date").value
-        document.getElementById("check_in").innerHTML=check_in;
-        var check_out = document.getElementById("check_out_date").value
-        document.getElementById("check_out").innerHTML=check_out;
-        document.getElementById("processed_data").style.display="block";
-        document.getElementById("search_process").style.display="none";
-    },4000);
+
+function sai() {
+    document.getElementById("block_chain").style.display = "none";
+    document.getElementById("search_process").style.display = "block";
+    if (process_type == "true") {
+        setTimeout(function () {
+            var place_from = document.getElementById("where_from").value
+            document.getElementById("from").innerHTML = place_from.toUpperCase();
+            var place_to = document.getElementById("where_to").value
+            document.getElementById("to").innerHTML = place_to.toUpperCase();
+            var check_in = document.getElementById("check_in_date").value
+            document.getElementById("check_in").innerHTML = check_in;
+            var check_out = document.getElementById("check_out_date").value
+            document.getElementById("check_out").innerHTML = check_out;
+            document.getElementById("processed_data").style.display = "block";
+            document.getElementById("search_process").style.display = "none";
+        }, 4000);
+    }
+    else {
+        setTimeout(function () {
+            document.getElementById("search_process").style.display = "none";
+            alert("Our Experts will get in touch with you soon!!!")
+            document.getElementById("block_chain").style.display = "block";
+            document.getElementById("where_from").value='';
+            document.getElementById("where_to").value='';
+            document.getElementById("check_in_date").value='';
+            document.getElementById("check_out_date").value='';
+        }, 4000)
+
+    }
 }
 window.confirmation = false
 function Remove_Popup() {
     document.getElementById("splash").classList.add("animate__zoomOutDown");
     setTimeout(function () {
-         document.getElementById("main_content").classList.remove("main_imp");
-         document.getElementById("splash").style.display = "none";
-     }, 1000);
-     window.onscroll = function () { };
-     window.confirmation = false;
+        document.getElementById("main_content").classList.remove("main_imp");
+        document.getElementById("splash").style.display = "none";
+    }, 1000);
+    window.onscroll = function () { };
+    window.confirmation = false;
     // var Name = document.getElementById("popup_name").value
     // var Email = document.getElementById('popup_email').value
     // var Number = document.getElementById('popup_phone_number').value
@@ -62,7 +77,7 @@ function Display_Popup() {
         document.getElementById("splash").classList.remove("animate__zoomOutDown");
         document.getElementById("main_content").classList.add("main_imp");
         document.getElementById("splash").style.display = "block";
-        document.getElementById("splash").style.top = (window.pageYOffset-40).toString() + 'px';
+        document.getElementById("splash").style.top = (window.pageYOffset - 40).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
@@ -74,12 +89,12 @@ function Display_Popup() {
     }
     else {
         document.getElementById("splash").classList.add("animate__zoomOutDown");
-                   setTimeout(function () {
-                        document.getElementById("main_content").classList.remove("main_imp");
-                        document.getElementById("splash").style.display = "none";
-                    }, 1000);
-                    window.onscroll = function () { };
-                    window.confirmation = false;
+        setTimeout(function () {
+            document.getElementById("main_content").classList.remove("main_imp");
+            document.getElementById("splash").style.display = "none";
+        }, 1000);
+        window.onscroll = function () { };
+        window.confirmation = false;
         // var Name = document.getElementById("popup_name").value
         // var Email = document.getElementById('popup_email').value
         // var Number = document.getElementById('popup_phone_number').value
@@ -122,7 +137,7 @@ function Display_Popup() {
         //     var Choice = document.getElementById('popup_type_flats').value
         //     var code_display = document.getElementById("popup_confirm_otp").style.display
         // }
-        
+
     }
 }
 // let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
@@ -132,10 +147,15 @@ function Display_Popup() {
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
-    if(data['display']=='true'){
-        document.getElementById("enquiry").style.display="block"
+    if (data['display'] == 'true') {
+        document.getElementById("enquiry").style.display = "block"
     }
-    else{
-        document.getElementById("enquiry").style.display="none"
+    else {
+        document.getElementById("enquiry").style.display = "none"
     }
+});
+let formMessages = firebase.database().ref("Visibility_Section").child("Process_button_type");
+formMessages.on('value', (snapshot) => {
+    const data = snapshot.val();
+    window.process_type = data['display'];
 });
