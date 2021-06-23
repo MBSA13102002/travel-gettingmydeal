@@ -195,6 +195,27 @@ function Lead_Collection(){
     }
 
 }
+function New_Lead_Collection(){
+    var Name = document.getElementById("new_name").value
+    var Number = document.getElementById("new_phone_number").value
+    var Email = document.getElementById("new_email").value
+    if (Name!='' && Number!='' && Email!=''){
+        document.getElementById("new_entries").style.display="none";
+        document.getElementById("new_success").style.display="block";
+        setTimeout(function(){
+            document.getElementById("new_success").style.display="none";
+            document.getElementById("new_name").value='';
+            document.getElementById("new_phone_number").value='';
+            document.getElementById("new_email").value='';
+            document.getElementById("new_entries").style.display="block"
+            // Remove_Processed_Popup()
+        },1500)
+    }
+    else{
+        alert("First fill all the details")
+    }
+
+}
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
