@@ -1,5 +1,18 @@
 function sai(){
-    alert("sai")
+    document.getElementById("block_chain").style.display="none";
+    document.getElementById("search_process").style.display="block";
+    setTimeout(function(){
+        var place_from = document.getElementById("where_from").value
+        document.getElementById("from").innerHTML=place_from.toUpperCase();
+        var place_to = document.getElementById("where_to").value
+        document.getElementById("to").innerHTML=place_to.toUpperCase();
+        var check_in = document.getElementById("check_in_date").value
+        document.getElementById("check_in").innerHTML=check_in;
+        var check_out = document.getElementById("check_out_date").value
+        document.getElementById("check_out").innerHTML=check_out;
+        document.getElementById("processed_data").style.display="block";
+        document.getElementById("search_process").style.display="none";
+    },4000);
 }
 window.confirmation = false
 function Remove_Popup() {
