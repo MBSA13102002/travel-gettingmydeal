@@ -146,7 +146,7 @@
     }
 
     .my-font-new {
-        font-size: 17px;
+        font-size: 13px;
         font-family: Actor
     }
 
@@ -195,7 +195,7 @@
 <!-- <body onload=Splash()> -->
 
 <body id="body_html">
-
+    <!-- =================================================5 second splash start======================================== -->
     <center>
         <div class="animate__animated animate__backInLeft card container more_imp my-5" id=splash
             style=width:22rem;display:none;height:40rem;>
@@ -229,6 +229,8 @@
             </center>
         </div>
     </center>
+    <!-- =================================================5 second splash end======================================== -->
+    <!-- =================================================lead form start======================================== -->
     <center>
         <div class="animate__animated animate__backInLeft card container more_imp my-5" id="processed_splash"
             style=width:18rem;display:none;height:25rem;>
@@ -285,12 +287,58 @@
             </center>
         </div>
     </center>
+    <!-- =================================================lead form end======================================== -->
+    <!-- =================================================Non-Clickable call form start======================================== -->
+    <center>
+        <div class="animate__animated animate__backInLeft card container more_imp my-5" id="call_processed_splash"
+            style=width:18rem;display:none;height:30rem;>
+            <center>
+                <span type=button id=close style="position:relative;float:right"
+                    onclick=Call_Remove_Processed_Popup()>x</span>
+                
+                    <div class=row>
+                        <img src="/images/logo_2.jpeg" class="mx-5 my-border" alt="" width="150" height="50">
+                        <h4 class="col-md-12 my-3" style="font-family:Yeseva One ;color:green">Our Experts will get in
+                            touch with you soon <br>
+                        </h4>
+                    </div>
+                    <div class=row>
+                        <div class="col">
+                            <p id="from" class="my-font"></p>
+                            <p id="check_in" class="my-font"></p><br><br>
+                            <p id="to" class="my-font"></p>
+                            <p id="check_out" class="my-font"></p>
+                        </div>
+                        <div class="col">
+                            <script
+                                src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_a60kujpj.json"
+                                background="transparent" speed="1" style="width: 100px; height: 100px;"class="my-5" loop 
+                                autoplay></lottie-player>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <a href="tel:9560252011"><button class="btn btn-success mx-5">CALL US RIGHT NOW!</button></a>
+                        <h6 class="col-md-12 my-2" style="font-family:Yeseva One ;color:red"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg><br>Call At<br>+91-9560252011</h6>
+
+                    </div>
+
+           
+            </center>
+        </div>
+    </center>
+    <!-- =================================================Clickable call form end======================================= -->
 
     <div class=content id=main_content>
         <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: white;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="/images/logo.jpeg" alt="" width="180" height="90"></a>
+                    <a class="navbar-brand" href="#"><img src="/images/logo.jpeg" alt="" width="130" height="70"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -324,14 +372,13 @@
                     <div class="row justify-content-center">
                         <div class=col-md-6>
                             <p><img src=https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
-                                    alt=Image class="img-fluid my-border"></p>
+                                    alt=Image class="img-fluid my-border mx-4" width="400" height="400" ></p>
                         </div>
                         <div class="col-md-6 my-2">
 
                             <div class=my_form>
                                 <div class="row mx-3">
-                                    <img src="/images/logo_2.jpeg" class="m-3 my-border" alt="" width="150" height="50">
-                                    <h3 class="col-md-12 my-2" style="font-family:Yeseva One">Book Your Flight Now!!
+                                    <h3 class="col-md-12 my-3" style="font-family:Yeseva One">Book Your Flight Now!!
                                     </h3>
                                 </div>
                                 <!-- ==============================lottie animation start==================== -->
@@ -344,76 +391,13 @@
                                     background="transparent" speed="1" style="width:300px;height:300px;display:none;"
                                     class="mx-5" loop autoplay id="search_process"></lottie-player>
                                 <!-- ================================lottie animation end===================== -->
-                                <!-- ============================processed data type-1 start=========================== -->
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json"
                                     background="transparent" id="success" speed="1"
                                     style="width: 200px; height: 200px;display:none;" class="mx-5" loop autoplay>
                                 </lottie-player>
-                                <div id="processed_data" style="display:none;">
-                                    <!-- <div id="processed_data"> -->
-                                    <div id="entries">
-                                        <div class="row mx-3">
-                                            <div class="col">
-                                                <p id="from" class="my-4 my-font-new_2">
-                                                <p>
-                                                <p id="check_in" class="my-4 my-font-new_2"></p>
-                                            </div>
-                                            <div class="col">
-                                                <script
-                                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                                <lottie-player
-                                                    src="https://assets3.lottiefiles.com/packages/lf20_vTKQNW.json"
-                                                    background="transparent" speed="1"
-                                                    style="width: 80px; height: 80px;margin-left:auto;margin-right:auto"
-                                                    loop autoplay></lottie-player>
-                                            </div>
-                                            <div class="col">
-                                                <p id="to" class="my-4 my-font-new_2"></p>
-                                                <p id="check_out" class="my-4 my-font-new_2"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row mx-3">
-                                            <div class="col-md-12 form-group my-1">
-                                                <input type=text class=form-control name=email id=name
-                                                    placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="row mx-3">
-                                            <div class="col-md-12 form-group my-1">
-                                                <input type=text class=form-control name=number id="phone_number"
-                                                    placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                        <div class="row mx-3">
-                                            <div class="col-md-12 form-group my-1">
-                                                <input type=email class=form-control name=email id="email"
-                                                    placeholder="Email Address">
-                                            </div>
-                                            <button type=button class="btn btn-danger rounded-0 my-2 mx-3"
-                                                onclick=Lead_Collection()>
-                                                SUBMIT</button>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mx-5">
-                                        <p class="lead my-font">Click on the button below for the enquiry!!</p>
-                                        <a type=button href=tel:9560252011 class="btn btn-danger rounded-0 my-2"
-                                            style="margin-left:auto;margin-right:auto">
-                                            CALL +91-9560252011</a>
-                                    </div>
-                                    <div class="row mx-3" id=send_otp>
-                                        <!-- <div class="col-md-12 form-group my-1">
-                                            <input type=text class=form-control data-provide="datepicker" name=number
-                                                id=check_out_date placeholder="Check Out Date:">
-
-                                        </div>
-                                        <button type=button class="btn btn-danger rounded-0 my-2 mx-3" onclick=sai()>
-                                            SUBMIT</button> -->
-                                    </div>
-                                </div>
-                                <!-- ============================processed data type 1 end=========================== -->
+                                
                                 <div id=block_chain>
                                     <div class="row mx-3">
                                         <div class="col-md-12 form-group">
@@ -722,8 +706,8 @@
     </style>
     <!-- <a class=float id="enquiry" onclick=Display_Popup() style="display:none"> -->
     <a href=tel:9560252011 class=float id="enquiry" style="display:none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" style="border:2px solid red;border-radius:18px" fill="red" class="bi bi-telephone mx-5 p-1"
-            viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" style="border:2px solid red;border-radius:18px"
+            fill="red" class="bi bi-telephone mx-5 p-1" viewBox="0 0 16 16">
             <path
                 d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
         </svg>

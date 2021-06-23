@@ -38,8 +38,27 @@ function Search_Flight() {
                 document.getElementById("check_in").innerHTML = check_in;
                 var check_out = document.getElementById("check_out_date").value
                 document.getElementById("check_out").innerHTML = check_out;
-                document.getElementById("processed_data").style.display = "block";
                 document.getElementById("search_process").style.display = "none";
+                document.getElementById("call_processed_splash").classList.remove("animate__zoomOutDown");
+                document.getElementById('call_processed_splash').style.display = "block";
+                if (screen.width < "900") {
+                    document.getElementById("enquiry").style.display = "none"
+                    }
+                document.getElementById("call_processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                    // if any scroll is attempted, set this to the previous value
+                    window.onscroll = function () {
+                        window.scrollTo(scrollLeft, scrollTop);
+                    };
+                // alert("Our Experts will get in touch with you soon!!!")
+                document.getElementById("main_content").classList.add("main_imp");
+                document.getElementById("block_chain").style.display = "block";
+                document.getElementById("where_from").value = '';
+                document.getElementById("where_to").value = '';
+                document.getElementById("check_in_date").value = '';
+                document.getElementById("check_out_date").value = '';
             }, 4000);
         }
         else {
@@ -79,6 +98,18 @@ function Remove_Processed_Popup() {
     setTimeout(function () {
         document.getElementById("main_content").classList.remove("main_imp");
         document.getElementById("processed_splash").style.display = "none";
+    }, 1000);
+    window.onscroll = function () { };
+    if (screen.width < "900") {
+        document.getElementById("enquiry").style.display = "block"
+        }
+
+}
+function Call_Remove_Processed_Popup() {
+    document.getElementById("call_processed_splash").classList.add("animate__zoomOutDown");
+    setTimeout(function () {
+        document.getElementById("main_content").classList.remove("main_imp");
+        document.getElementById("call_processed_splash").style.display = "none";
     }, 1000);
     window.onscroll = function () { };
     if (screen.width < "900") {
@@ -196,9 +227,10 @@ function Display_Popup() {
 
     }
 }
-// let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
-// formMessaging.set({
-//     content:"SAVE UPTO 30% ON CALL BOOKING"
+// let formMessaged = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
+// formMessaged.set({
+
+//     display:"true"
 // });
 function Lead_Collection(){
     var Name = document.getElementById("name").value
@@ -244,31 +276,35 @@ function New_Lead_Collection(){
 
 // function getresolution() {
 // }
+// ==============================Popup Visibility function start======================================================
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == 'true') {
-
+        
         document.getElementById("body_html").onload=Splash()
     }
     else {
         document.getElementById("body_html").onload=Nothing()
     }
-
+    
 });
+// ==============================Popup Visibility function end======================================================
+// ==============================Process_button_type Visibility function start======================================================
 let formMessages = firebase.database().ref("Visibility_Section").child("Process_button_type");
 formMessages.on('value', (snapshot) => {
     const data = snapshot.val();
     window.process_type = data['display'];
 });
-
+// ==============================Process_button_type Visibility function start======================================================
+// ==============================Tagline Change function start======================================================
 let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
 formMessaging.on('value', (snapshot) => {
     const data = snapshot.val();
     window.tagline = data['content'];
     document.getElementById("tagline").innerHTML=tagline;
 });
-
+// ==============================Process_button_type Visibility function start======================================================
 if (screen.width < "900") {
     document.getElementById("enquiry").style.display = "block"
     }
