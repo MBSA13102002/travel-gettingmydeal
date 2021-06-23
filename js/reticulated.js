@@ -28,7 +28,7 @@ function Search_Flight() {
                 document.getElementById("search_process").style.display = "none";
                 document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
                 document.getElementById('processed_splash').style.display = "block";
-                document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+                document.getElementById("processed_splash").style.top = (window.pageYOffset+100).toString() + 'px';
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
@@ -171,9 +171,9 @@ function Display_Popup() {
 
     }
 }
-// let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
-// formMessage.set({
-//     display:"true"
+// let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
+// formMessaging.set({
+//     content:"SAVE UPTO 30% ON CALL BOOKING"
 // });
 function Lead_Collection(){
     var Name = document.getElementById("name").value
@@ -230,4 +230,11 @@ let formMessages = firebase.database().ref("Visibility_Section").child("Process_
 formMessages.on('value', (snapshot) => {
     const data = snapshot.val();
     window.process_type = data['display'];
+});
+
+let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
+formMessaging.on('value', (snapshot) => {
+    const data = snapshot.val();
+    window.tagline = data['content'];
+    document.getElementById("tagline").innerHTML=tagline;
 });
