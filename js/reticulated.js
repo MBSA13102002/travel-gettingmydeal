@@ -19,7 +19,9 @@ function sai() {
     else {
         setTimeout(function () {
             document.getElementById("search_process").style.display = "none";
-            alert("Our Experts will get in touch with you soon!!!")
+            document.getElementById('processed_splash').style.display="block";
+            // alert("Our Experts will get in touch with you soon!!!")
+            document.getElementById("main_content").classList.add("main_imp");
             document.getElementById("block_chain").style.display = "block";
             document.getElementById("where_from").value='';
             document.getElementById("where_to").value='';
@@ -30,6 +32,16 @@ function sai() {
     }
 }
 window.confirmation = false
+function Remove_Processed_Popup() {
+    
+    document.getElementById("processed_splash").classList.add("animate__zoomOutDown");
+    setTimeout(function () {
+        document.getElementById("main_content").classList.remove("main_imp");
+        document.getElementById("processed_splash").style.display = "none";
+    }, 1000);
+    window.onscroll = function () { };
+    window.confirmation = false;
+}
 function Remove_Popup() {
     document.getElementById("splash").classList.add("animate__zoomOutDown");
     setTimeout(function () {
