@@ -19,6 +19,7 @@ function sai() {
     else {
         setTimeout(function () {
             document.getElementById("search_process").style.display = "none";
+            document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
             document.getElementById('processed_splash').style.display="block";
             document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -47,7 +48,7 @@ function Remove_Processed_Popup() {
         document.getElementById("processed_splash").style.display = "none";
     }, 1000);
     window.onscroll = function () { };
-    window.confirmation = false;
+    
 }
 function Remove_Popup() {
     document.getElementById("splash").classList.add("animate__zoomOutDown");
