@@ -208,7 +208,7 @@ function New_Lead_Collection(){
             document.getElementById("new_phone_number").value='';
             document.getElementById("new_email").value='';
             document.getElementById("new_entries").style.display="block"
-            // Remove_Processed_Popup()
+            Remove_Processed_Popup()
         },1500)
     }
     else{
@@ -238,3 +238,6 @@ formMessaging.on('value', (snapshot) => {
     window.tagline = data['content'];
     document.getElementById("tagline").innerHTML=tagline;
 });
+function getResolution() {
+    alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+}
