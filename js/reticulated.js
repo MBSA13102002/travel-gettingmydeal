@@ -217,7 +217,9 @@ function New_Lead_Collection(){
 
 }
 function getresolution() {
-    alert("Your screen resolution is: " + screen.width + "x" + screen.height);
+     
+        alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio);
+    
 }
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
 formMessage.on('value', (snapshot) => {
