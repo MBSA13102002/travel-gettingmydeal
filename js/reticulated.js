@@ -47,14 +47,14 @@ function Search_Flight() {
                 document.getElementById("search_process").style.display = "none";
                 document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
                 document.getElementById('processed_splash').style.display = "block";
-                document.getElementById("processed_splash").style.top = (window.pageYOffset+100).toString() + 'px';
-                // scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                // scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
                     // if any scroll is attempted, set this to the previous value
-                    // window.onscroll = function () {
-                    //     window.scrollTo(scrollLeft, scrollTop);
-                    // };
+                    window.onscroll = function () {
+                        window.scrollTo(scrollLeft, scrollTop);
+                    };
                 // alert("Our Experts will get in touch with you soon!!!")
                 document.getElementById("main_content").classList.add("main_imp");
                 document.getElementById("block_chain").style.display = "block";
