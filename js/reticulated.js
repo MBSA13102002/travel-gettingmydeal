@@ -216,7 +216,7 @@ function New_Lead_Collection(){
     }
 
 }
-function getResolution() {
+function getresolution() {
     alert("Your screen resolution is: " + screen.width + "x" + screen.height);
 }
 let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Visibility");
