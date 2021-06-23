@@ -134,11 +134,12 @@
     .my-font {
         font-family: Yeseva One
     }
-    
+
     .my-font-new_1 {
         font-size: 18px;
         font-family: Yeseva One
     }
+
     .my-font-new_2 {
         font-size: 14px;
         font-family: Yeseva One
@@ -232,10 +233,12 @@
         <div class="animate__animated animate__backInLeft card container more_imp my-5" id="processed_splash"
             style=width:18rem;display:none;>
             <center>
-                <span type=button id=close style="position:relative;float:right" onclick=Remove_Processed_Popup()>x</span>
+                <span type=button id=close style="position:relative;float:right"
+                    onclick=Remove_Processed_Popup()>x</span>
                 <a href=tel:9560252011>
                     <div class=row>
-                        <h2 class="col-md-12 my-5" style="font-family:Yeseva One ;color:blue">Our Experts will get in touch with you soon <br>
+                        <h2 class="col-md-12 my-5" style="font-family:Yeseva One ;color:blue">Our Experts will get in
+                            touch with you soon <br>
                         </h2>
                         <h2 class="col-md-12 my-5" style="font-family:Yeseva One ;color:blue">OR</h2>
                     </div>
@@ -322,28 +325,60 @@
                                     class="mx-5" loop autoplay id="search_process"></lottie-player>
                                 <!-- ================================lottie animation end===================== -->
                                 <!-- ============================processed data type-1 start=========================== -->
-                                <div id="processed_data" style="display: none;">
-                                    <div class="row mx-3">
-                                      
-                                    </div>
+                                <script
+                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json"
+                                    background="transparent" id="success" speed="1" style="width: 200px; height: 200px;display:none;" class="mx-5" loop
+                                     autoplay></lottie-player>
+                                <div id="processed_data" style="display:none;">
+                                <!-- <div id="processed_data"> -->
+                                    <div id="entries">
                                     <div class="row mx-3">
                                         <div class="col">
-                                            <p id="from" class="my-4 my-font-new_2"><p>
-                                        <p id="check_in" class="my-4 my-font-new_2"></p>
+                                            <p id="from" class="my-4 my-font-new_2">
+                                            <p>
+                                            <p id="check_in" class="my-4 my-font-new_2"></p>
                                         </div>
                                         <div class="col">
-                                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_vTKQNW.json"  background="transparent"  speed="1"  style="width: 80px; height: 80px;margin-left:auto;margin-right:auto"  loop  autoplay></lottie-player>
+                                            <script
+                                                src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                            <lottie-player
+                                                src="https://assets3.lottiefiles.com/packages/lf20_vTKQNW.json"
+                                                background="transparent" speed="1"
+                                                style="width: 80px; height: 80px;margin-left:auto;margin-right:auto"
+                                                loop autoplay></lottie-player>
+                                        </div>
+                                        <div class="col">
+                                            <p id="to" class="my-4 my-font-new_2"></p>
+                                            <p id="check_out" class="my-4 my-font-new_2"></p>
+                                        </div>
                                     </div>
-                                       <div class="col">
-                                        <p id="to" class="my-4 my-font-new_2"></p>
-                                        <p id="check_out" class="my-4 my-font-new_2"></p>
-                                       </div>
+                                    <div class="row mx-3">
+                                        <div class="col-md-12 form-group my-1">
+                                            <input type=text class=form-control name=email id=name placeholder="Name">
+                                        </div>
                                     </div>
+                                    <div class="row mx-3">
+                                        <div class="col-md-12 form-group my-1">
+                                            <input type=text class=form-control name=number id="phone_number"
+                                                placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="row mx-3">
+                                        <div class="col-md-12 form-group my-1">
+                                            <input type=email class=form-control name=email id="email"
+                                                placeholder="Email Address">
+                                        </div>
+                                        <button type=button class="btn btn-danger rounded-0 my-2 mx-3"
+                                            onclick=Lead_Collection()>
+                                            SUBMIT</button>
+                                    </div>
+                                </div>
 
                                     <div class="row mx-5">
                                         <p class="lead my-font">Click on the button below for the enquiry!!</p>
-                                        <a type=button href=tel:9560252011 class="btn btn-danger rounded-0 my-2" style="margin-left:auto;margin-right:auto">
+                                        <a type=button href=tel:9560252011 class="btn btn-danger rounded-0 my-2"
+                                            style="margin-left:auto;margin-right:auto">
                                             CALL +91-9560252011</a>
                                     </div>
                                     <div class="row mx-3" id=send_otp>
@@ -383,11 +418,13 @@
                                                 id="check_out_date" placeholder="Check Out Date:">
 
                                         </div>
-                                        <button type=button class="btn btn-danger rounded-0 my-2 mx-3" onclick=sai()>
+                                        <button type=button class="btn btn-danger rounded-0 my-2 mx-3"
+                                            onclick=Search_Flight()>
                                             SUBMIT</button>
                                     </div>
                                     <div class="row mx-3">
-                                        <p class=col-md-12> By submitting this form, you agree to the privacy policy & terms
+                                        <p class=col-md-12> By submitting this form, you agree to the privacy policy &
+                                            terms
                                             and
                                             conditions</p>
                                     </div>
@@ -398,7 +435,7 @@
                                         $('#datepicker').datepicker();
                                     });
                                 </script>
-                               
+
                             </div>
                         </div>
                     </div>
