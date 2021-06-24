@@ -313,6 +313,24 @@ function Scroll_Win(){
         behavior: 'smooth'
       });
 }
+function  Submit_Review(){
+    var Review_Name = document.getElementById("Review_Name").value
+    var Review = document.getElementById("Review").value
+    if(Review!=''&& Review_Name!=''){
+        document.getElementById("submit_review").style.display="block";
+        document.getElementById("review_entries").style.display="none";
+        setTimeout(function(){
+            document.getElementById("submit_review").style.display="none";
+            document.getElementById("review_entries").style.display="block";
+            document.getElementById("Review_Name").value=''
+            document.getElementById("Review").value=''
+        },2000)
+           
+    }
+    else{
+        alert("Fill The Review & Name Properly!")
+    }
+}
 // function getresolution() {
 // }
 // ==============================Popup Visibility function start======================================================

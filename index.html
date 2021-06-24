@@ -650,24 +650,30 @@
                 </div>
                 <div class="card d">
                     <div class="card-header my-font">
-                       Review Section
+                        Review Section
                     </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-12 form-group my-1">
-                                <textarea type=text class=form-control name=email placeholder="Write a Review..."></textarea>
+                        <script
+                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json"
+                            background="transparent" id="submit_review" speed="1"
+                            style="width: 200px; height: 200px;display:none" loop autoplay></lottie-player>
+                        <div id="review_entries">
+                            <div class="row">
+                                <div class="col-md-12 form-group my-1">
+                                    <textarea type=text class=form-control name=email id="Review"
+                                        placeholder="Write a Review..."></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 form-group my-1">
-                                <input type=text class=form-control name=number
-                                    placeholder="Name">
+                            <div class="row">
+                                <div class="col-md-12 form-group my-1">
+                                    <input type=text class=form-control name=number id="Review_Name" placeholder="Name">
+                                </div>
                             </div>
+                            <button class="btn btn-dark" onclick="Submit_Review()">SUBMIT</button>
                         </div>
-                        <button class="btn btn-dark">SUBMIT</button>
                     </div>
-                </div
-            </div>
+                </div </div>
         </main>
         <footer id="Footer_View" class="footer mt-auto py-3 bg-dark">
             <center>
