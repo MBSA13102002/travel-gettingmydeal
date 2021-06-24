@@ -1,3 +1,36 @@
+window.confirmation = false
+function Lead_Form(){
+    if (window.lead_form=='true'){
+        document.getElementById("main_content").classList.add("main_imp");
+        document.getElementById("splash").classList.remove("animate__zoomOutDown");
+        document.getElementById("splash").style.display = "block";
+        document.getElementById("splash").style.top = (window.pageYOffset).toString() + 'px';
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+            window.confirmation = true;
+    }
+    else{
+        document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
+        document.getElementById('processed_splash').style.display = "block";
+        if (screen.width < "900") {
+            document.getElementById("enquiry").style.display = "none"
+            }
+        document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+        window.confirmation = true;
+    }
+}
 
 function Splash() {
     setTimeout(function () {
@@ -15,7 +48,7 @@ function Splash() {
     }, 3000);
 
 }
-function Nothing(){
+function Nothing() {
 
 }
 function Search_Flight() {
@@ -43,7 +76,7 @@ function Search_Flight() {
                 document.getElementById('call_processed_splash').style.display = "block";
                 if (screen.width < "900") {
                     document.getElementById("enquiry").style.display = "none"
-                    }
+                }
                 document.getElementById("call_processed_splash").style.top = (window.pageYOffset).toString() + 'px';
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -68,7 +101,7 @@ function Search_Flight() {
                 document.getElementById('processed_splash').style.display = "block";
                 if (screen.width < "900") {
                     document.getElementById("enquiry").style.display = "none"
-                    }
+                }
                 document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -92,7 +125,6 @@ function Search_Flight() {
         alert("Fill All The Details")
     }
 }
-window.confirmation = false
 function Remove_Processed_Popup() {
     document.getElementById("processed_splash").classList.add("animate__zoomOutDown");
     setTimeout(function () {
@@ -102,7 +134,8 @@ function Remove_Processed_Popup() {
     window.onscroll = function () { };
     if (screen.width < "900") {
         document.getElementById("enquiry").style.display = "block"
-        }
+    }
+    window.confirmation = false;
 
 }
 function Call_Remove_Processed_Popup() {
@@ -114,7 +147,8 @@ function Call_Remove_Processed_Popup() {
     window.onscroll = function () { };
     if (screen.width < "900") {
         document.getElementById("enquiry").style.display = "block"
-        }
+    }
+    window.confirmation = false;
 
 }
 function Remove_Popup() {
@@ -232,43 +266,43 @@ function Display_Popup() {
 
 //     display:"true"
 // });
-function Lead_Collection(){
+function Lead_Collection() {
     var Name = document.getElementById("name").value
     var Number = document.getElementById("phone_number").value
     var Email = document.getElementById("email").value
-    if (Name!='' && Number!='' && Email!=''){
-        document.getElementById("entries").style.display="none";
-        document.getElementById("success").style.display="block";
-        setTimeout(function(){
-            document.getElementById("success").style.display="none";
-            document.getElementById("name").value='';
-            document.getElementById("phone_number").value='';
-            document.getElementById("email").value='';
-            document.getElementById("entries").style.display="block"
-        },1500)
+    if (Name != '' && Number != '' && Email != '') {
+        document.getElementById("entries").style.display = "none";
+        document.getElementById("success").style.display = "block";
+        setTimeout(function () {
+            document.getElementById("success").style.display = "none";
+            document.getElementById("name").value = '';
+            document.getElementById("phone_number").value = '';
+            document.getElementById("email").value = '';
+            document.getElementById("entries").style.display = "block"
+        }, 1500)
     }
-    else{
+    else {
         alert("First fill all the details")
     }
 
 }
-function New_Lead_Collection(){
+function New_Lead_Collection() {
     var Name = document.getElementById("new_name").value
     var Number = document.getElementById("new_phone_number").value
     var Email = document.getElementById("new_email").value
-    if (Name!='' && Number!='' && Email!=''){
-        document.getElementById("new_entries").style.display="none";
-        document.getElementById("new_success").style.display="block";
-        setTimeout(function(){
-            document.getElementById("new_success").style.display="none";
-            document.getElementById("new_name").value='';
-            document.getElementById("new_phone_number").value='';
-            document.getElementById("new_email").value='';
-            document.getElementById("new_entries").style.display="block"
+    if (Name != '' && Number != '' && Email != '') {
+        document.getElementById("new_entries").style.display = "none";
+        document.getElementById("new_success").style.display = "block";
+        setTimeout(function () {
+            document.getElementById("new_success").style.display = "none";
+            document.getElementById("new_name").value = '';
+            document.getElementById("new_phone_number").value = '';
+            document.getElementById("new_email").value = '';
+            document.getElementById("new_entries").style.display = "block"
             Remove_Processed_Popup()
-        },1500)
+        }, 1500)
     }
-    else{
+    else {
         alert("First fill all the details")
     }
 
@@ -281,13 +315,13 @@ let formMessage = firebase.database().ref("Visibility_Section").child("Popup_Vis
 formMessage.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == 'true') {
-        
-        document.getElementById("body_html").onload=Splash()
+
+        document.getElementById("body_html").onload = Splash()
     }
     else {
-        document.getElementById("body_html").onload=Nothing()
+        document.getElementById("body_html").onload = Nothing()
     }
-    
+
 });
 // ==============================Popup Visibility function end======================================================
 // ==============================Process_button_type Visibility function start======================================================
@@ -302,19 +336,32 @@ let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
 formMessaging.on('value', (snapshot) => {
     const data = snapshot.val();
     window.tagline = data['content'];
-    document.getElementById("tagline").innerHTML=tagline;
+    document.getElementById("tagline").innerHTML = tagline;
 });
 // ==============================Tagline Change function end======================================================
 // ==============================Sticky call Button Visibility function start======================================================
 let SticyCallButton = firebase.database().ref("Visibility_Section").child("Sticky-Call-Button");
 SticyCallButton.on('value', (snapshot) => {
     const data = snapshot.val();
-    if (data['display']=="true"){
+    if (data['display'] == "true") {
         if (screen.width < "900") {
             document.getElementById("enquiry").style.display = "block"
-            }
+        }
     }
-    else{
+    else {
         document.getElementById("enquiry").style.display = "none";
     }
 });
+// ==============================Sticky call Button Visibility function end======================================================
+// ==============================Lead Form (Clickable) Visibility function start======================================================
+let LeadForm_Clickable = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
+LeadForm_Clickable.on('value', (snapshot) => {
+    const data = snapshot.val();
+    if (data['display'] == "true") {
+        window.lead_form = "true";
+    }
+    else {
+        window.lead_form = "false";
+    }
+});
+        // ==============================Lead Form (Clickable) Visibility function end======================================================
