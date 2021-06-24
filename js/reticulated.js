@@ -308,7 +308,11 @@ function New_Lead_Collection() {
     }
 
 }
-
+function Scroll_Win(){
+    document.getElementById('Footer_View').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
 // function getresolution() {
 // }
 // ==============================Popup Visibility function start======================================================
