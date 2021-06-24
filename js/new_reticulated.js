@@ -1,4 +1,47 @@
 window.confirmation = false
+function Lead_Form(){
+    if (window.lead_form=='true'){
+        document.getElementById("main_content").classList.add("main_imp");
+        document.getElementById("splash").classList.remove("animate__zoomOutDown");
+        document.getElementById("splash").style.display = "block";
+        document.getElementById("splash").style.top = (window.pageYOffset).toString() + 'px';
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        
+        
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+        window.confirmation = true;
+    }
+    else{
+        document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
+        document.getElementById("main_content").classList.add("main_imp");
+        document.getElementById('processed_splash').style.display = "block";
+        if (screen.width < "900") {
+            document.getElementById("enquiry").style.display = "none"
+            }
+        document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+            // if any scroll is attempted, set this to the previous value
+            window.onscroll = function () {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+        window.confirmation = true;
+    }
+}
+function Remove_Popup() {
+    document.getElementById("splash").classList.add("animate__zoomOutDown");
+    setTimeout(function () {
+        document.getElementById("main_content").classList.remove("main_imp");
+        document.getElementById("splash").style.display = "none";
+    }, 1000);
+    window.onscroll = function () { };
+    window.confirmation = false;
+
+}
 function Display_Popup() {
     if (window.confirmation == false) {
         document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
@@ -56,3 +99,13 @@ function New_Lead_Collection(){
     }
 
 }
+let LeadForm_Clickable = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
+LeadForm_Clickable.on('value', (snapshot) => {
+    const data = snapshot.val();
+    if (data['display'] == "true") {
+        window.lead_form = "true";
+    }
+    else {
+        window.lead_form = "false";
+    }
+});
