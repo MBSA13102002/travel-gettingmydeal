@@ -7,15 +7,16 @@ function Lead_Form(){
         document.getElementById("splash").style.top = (window.pageYOffset).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-
-            window.onscroll = function () {
-                window.scrollTo(scrollLeft, scrollTop);
-            };
-            window.confirmation = true;
+        
+        
+        window.onscroll = function () {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+        window.confirmation = true;
     }
     else{
         document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
+        document.getElementById("main_content").classList.add("main_imp");
         document.getElementById('processed_splash').style.display = "block";
         if (screen.width < "900") {
             document.getElementById("enquiry").style.display = "none"
