@@ -360,6 +360,7 @@ formMessaging.on('value', (snapshot) => {
     const data = snapshot.val();
     window.tagline = data['content'];
     document.getElementById("tagline").innerHTML = tagline;
+    document.getElementById("tagline_new").innerHTML = tagline;
 });
 // ==============================Tagline Change function end======================================================
 // ==============================Sticky call Button Visibility function start======================================================
