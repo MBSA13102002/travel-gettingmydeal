@@ -308,8 +308,13 @@ function New_Lead_Collection() {
     }
 
 }
-function Scroll_Win(){
+function Scroll_Win_Footer(){
     document.getElementById('Footer_View').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
+function Scroll_Win_About(){
+    document.getElementById('About_Us').scrollIntoView({
         behavior: 'smooth'
       });
 }
