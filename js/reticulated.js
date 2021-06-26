@@ -314,6 +314,16 @@ function Scroll_Win_Footer(){
         behavior: 'smooth'
       });
 }
+function Scroll_Win_Search(){
+    document.getElementById('Search').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
+function Scroll_Win_Review(){
+    document.getElementById('Review_View').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
 function Scroll_Win_About(){
     document.getElementById('About_Us').scrollIntoView({
         behavior: 'smooth'
