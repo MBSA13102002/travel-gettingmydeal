@@ -1,4 +1,13 @@
+if (screen.width < "900") {
+    document.getElementById("Main_Image").style.width="500px"
+    document.getElementById("Main_Image").style.height="150px"
+}
+else{
+    document.getElementById("Main_Image").style.width="500px"
+    document.getElementById("Main_Image").style.height="400px"
+}
 window.confirmation = false
+
 function Lead_Form(){
     if (window.lead_form=='true'){
         document.getElementById("main_content").classList.add("main_imp");
