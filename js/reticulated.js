@@ -37,7 +37,7 @@ function Splash() {
     setTimeout(function () {
         document.getElementById("main_content").classList.add("main_imp");
         document.getElementById("splash").style.display = "block";
-        document.getElementById("splash").style.top = (window.pageYOffset).toString() + 'px';
+        document.getElementById("splash").style.top = (window.pageYOffset-20).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
