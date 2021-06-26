@@ -99,6 +99,12 @@ function New_Lead_Collection(){
     }
 
 }
+function Call_Clicks(){
+    let CallClicks_New = firebase.database().ref("Call_Clicks_ViewInfo");
+    CallClicks_New.set({
+               amount:window.callclicks+1,   
+});
+}
 let LeadForm_Clickable = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
 LeadForm_Clickable.on('value', (snapshot) => {
     const data = snapshot.val();
@@ -108,4 +114,9 @@ LeadForm_Clickable.on('value', (snapshot) => {
     else {
         window.lead_form = "false";
     }
+});
+let CallClicks = firebase.database().ref("Call_Clicks_ViewInfo").child("amount");
+CallClicks.on('value', (snapshot) => {
+    const data = snapshot.val();
+    window.callclicks = data;
 });
