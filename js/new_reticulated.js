@@ -6,7 +6,7 @@ function Lead_Form(){
         document.getElementById("splash").style.display = "block";
         document.getElementById("splash").style.top = (window.pageYOffset).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
         
         
         window.onscroll = function () {
@@ -18,12 +18,9 @@ function Lead_Form(){
         document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
         document.getElementById("main_content").classList.add("main_imp");
         document.getElementById('processed_splash').style.display = "block";
-        if (screen.width < "900") {
-            document.getElementById("enquiry").style.display = "none"
-            }
-        document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
+        document.getElementById('processed_splash').style.top = (window.pageYOffset).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
             // if any scroll is attempted, set this to the previous value
             window.onscroll = function () {
