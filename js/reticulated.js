@@ -161,39 +161,6 @@ function Remove_Popup() {
     }, 1000);
     window.onscroll = function () { };
     window.confirmation = false;
-    // var Name = document.getElementById("popup_name").value
-    // var Email = document.getElementById('popup_email').value
-    // var Number = document.getElementById('popup_phone_number').value
-    // var Choice = document.getElementById('popup_type_flats').value
-    // var code_display = document.getElementById("popup_confirm_otp").style.display
-    // if (code_display == 'none') {
-    //     if (Name != '' || Email != '' || Number != '' || Choice != "CHOOSE YOUR REQUIREMENT") {
-    //         var ref = confirm("Do you really want to exit the enquiry?")
-    //         if (ref == true) {
-    //             document.getElementById("splash").classList.add("animate__zoomOutDown");
-    //             setTimeout(function () {
-    //                 document.getElementById("main_content").classList.remove("main_imp");
-    //                 document.getElementById("splash").style.display = "none";
-    //             }, 1000);
-    //             window.onscroll = function () { };
-    //             window.confirmation = false;
-
-    //         } else {
-
-    //         }
-    //     }
-    //     else {
-    //         document.getElementById("splash").classList.add("animate__zoomOutDown");
-    //         setTimeout(function () {
-    //             document.getElementById("main_content").classList.remove("main_imp");
-    //             document.getElementById("splash").style.display = "none";
-    //         }, 1000);
-    //         window.onscroll = function () { };
-    //     } window.confirmation = false;
-    // }
-    // else {
-    //     alert("Verfication under process..Enter the OTP & Submit the form.")
-    // }
 }
 function Display_Popup() {
     if (window.confirmation == false) {
@@ -204,7 +171,7 @@ function Display_Popup() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
-            // if any scroll is attempted, set this to the previous value
+
             window.onscroll = function () {
                 window.scrollTo(scrollLeft, scrollTop);
             };
@@ -347,6 +314,12 @@ function  Submit_Review(){
         alert("Fill The Review & Name Properly!")
     }
 }
+function Call_Clicks(){
+    let CallClicks_New = firebase.database().ref("Call_Clicks");
+    CallClicks_New.set({
+               amount:window.callclicks+1,   
+});
+}
 // function getresolution() {
 // }
 // ==============================Popup Visibility function start======================================================
@@ -404,4 +377,12 @@ LeadForm_Clickable.on('value', (snapshot) => {
         window.lead_form = "false";
     }
 });
-        // ==============================Lead Form (Clickable) Visibility function end======================================================
+// ==============================Lead Form (Clickable) Visibility function end======================================================
+
+// ==============================Call Clicks function start======================================================
+let CallClicks = firebase.database().ref("Call_Clicks").child("amount");
+CallClicks.on('value', (snapshot) => {
+    const data = snapshot.val();
+    window.callclicks = data;
+});
+// ==============================Call Cliacks function end======================================================

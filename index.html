@@ -203,7 +203,7 @@
             <center>
                 <span type=button id=close style="position:relative;float:right;color:white"
                     onclick=Remove_Popup()>x</span>
-                <a href=tel:9560252011>
+                <a href=tel:9560252011 onclick="Call_Clicks()">
                     <div class=row>
                         <h2 class="col-md-12" style="font-family:Almarai ;color:white;"><b> Call For
                                 Reservation</b>
@@ -213,9 +213,9 @@
                     </div>
                     <div class="row my-4 mx-3">
                         <a class="col" href=tel:9560252011
-                            style="background-color:#E71436;color:white;font-size:30px;padding:5%"><b>
+                            style="background-color:#E71436;color:white;font-size:30px;padding:5%" onclick="Call_Clicks()"><b>
                                 (+91)9560252011</b></a>
-                        <a class="col-md-12 " href=tel:9560252011>
+                        <a class="col-md-12 " href=tel:9560252011 onclick="Call_Clicks()">
                             <h4 class="col-md-12 " style="font-family:Almarai;color:gray;">24x7 Customer Service
                             </h4>
                             <h5 class="col-md-12 my-4" id="tagline_new" style="font-family:ABeeZee;color:white;">
@@ -248,7 +248,7 @@
             <center>
                 <span type=button id=close style="position:relative;float:right;color:white"
                     onclick=Remove_Processed_Popup()>x</span>
-                <a href=tel:9560252011>
+                <a href=tel:9560252011 onclick="Call_Clicks()">
                     <div class=row>
                         <h4 class="col-md-12 my-3" style="font-family:Yeseva One ;color:white">Our Experts will get in
                             touch with you soon <br>
@@ -344,7 +344,7 @@
                         style="border-radius:18px;margin-left:auto;margin-right:auto;" class="bi bi-telephone my-2">
                     <h6 class="col-md-12 " style="font-family:Yeseva One ;color:white">Call at +91-9560252011 <br>
                     </h6>
-                    <a href="tel:9560252011"><button class="btn btn-success mx-5">CALL US RIGHT NOW!</button></a>
+                    <a href="tel:9560252011"><button class="btn btn-success mx-5" onclick="Call_Clicks()">CALL US RIGHT NOW!</button></a>
 
                 </div>
 
@@ -703,7 +703,7 @@
                         <center>
                             <h2 style="font-family:Almarai ;color:white;">24/7 Reservation Helpline</h2>
                             <p style="font-family:Almarai ;color:white;">Use our Fast Team* to book or reschedule your flight.</p>
-                            <a type="button" href="tel:9560252011" class="btn p-2" style="background-color:#E71436;color:white;font-size:20px">+91- 9560252011</a>
+                            <a type="button" href="tel:9560252011" onclick="Call_Clicks()" class="btn p-2" style="background-color:#E71436;color:white;font-size:20px">+91- 9560252011</a>
                          
                         </center>
                         
@@ -964,6 +964,7 @@
                                     <li><a href="/view-information/">Latest Updates</a></li>
                                     <li><a onclick="Scroll_Win_Review()">Review</a></li>
                                     <li><a onclick="Scroll_Win_Search()">Book Flight</a></li>
+                                    <li><a onclick="Call_Clicks()" href="tel:9560252011">Call Us Now!!</a></li>
 
                                 </ul>
                             </div>
@@ -1043,7 +1044,7 @@
         }
     </style>
     <!-- <a class=float id="enquiry" onclick=Display_Popup() style="display:none"> -->
-    <a href=tel:9560252011 class=float id="enquiry" style="display:none;">
+    <a href=tel:9560252011 onclick="Call_Clicks()" class=float id="enquiry" style="display:none;">
 
         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" style="border:2px solid green;border-radius:18px"
             fill="green" class="bi bi-telephone mx-5 my-3 p-1" viewBox="0 0 16 16">
