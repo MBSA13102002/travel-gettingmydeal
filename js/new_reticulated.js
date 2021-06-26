@@ -118,3 +118,10 @@ CallClicks.on('value', (snapshot) => {
     const data = snapshot.val();
     window.callclicks = data;
 });
+let formMessaging = firebase.database().ref("Content_Section").child("Tagline");
+formMessaging.on('value', (snapshot) => {
+    const data = snapshot.val();
+    window.tagline = data['content'];
+   
+    document.getElementById("tagline_new").innerHTML = tagline;
+});
