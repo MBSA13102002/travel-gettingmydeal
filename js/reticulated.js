@@ -55,10 +55,11 @@ function Nothing() {
 function Search_Flight() {
     var Whereto = document.getElementById("where_to").value
     var Wherefrom = document.getElementById("where_from").value
+    var Passengers= document.getElementById("passengers").value
     var Checkindate = document.getElementById("check_in_date").value
     var Checkoutdate = document.getElementById("check_out_date").value
 
-    if (Whereto != '' && Wherefrom != '' && Checkindate != '' && Checkoutdate != '') {
+    if (Whereto != '' && Wherefrom != '' && Passengers!=''&& Checkindate != '' && Checkoutdate != '') {
 
         document.getElementById("block_chain").style.display = "none";
         document.getElementById("search_process").style.display = "block";
