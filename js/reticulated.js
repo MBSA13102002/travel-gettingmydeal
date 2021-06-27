@@ -396,23 +396,23 @@ CallClicks.on('value', (snapshot) => {
 });
 // ==============================Call Cliacks function end======================================================
 // ==============================Mobile Number function start======================================================
-// let MobileNumber = firebase.database().ref("Content_Section").child("Tagline");
-// MobileNumber.on('value', (snapshot) => {
-//     const data = snapshot.val();
-//     var num = data['number']
-//     document.getElementById("Mobile_Number").innerHTML=num;
-//    document.getElementById("Mobile_Number_1").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_2").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_3").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_4").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_5").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_7").href="tel:"+num.substring(num.length - 10)
-//    document.getElementById("Mobile_Number_7").innerHTML=num;
-//    document.getElementById("Mobile_Number_10").innerHTML=num;
-//    document.getElementById("Mobile_Number_8").innerHTML="Call us "+num
-//    document.getElementById("Mobile_Number_9").href="tel:"+num.substring(num.length - 10)
+let MobileNumber = firebase.database().ref("Content_Section").child("Tagline");
+MobileNumber.on('value', (snapshot) => {
+    const data = snapshot.val();
+    var num = data['number']
+    document.getElementById("Mobile_Number").innerHTML=num;
+   document.getElementById("Mobile_Number_1").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_2").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_3").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_4").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_5").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_7").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_7").innerHTML=num;
+   document.getElementById("Mobile_Number_10").innerHTML=num;
+   document.getElementById("Mobile_Number_8").innerHTML="Call us "+num
+   document.getElementById("Mobile_Number_9").href="tel:"+num.substring(num.length - 10)
    
-// });
+});
 // ==============================Mobile Number function end======================================================
