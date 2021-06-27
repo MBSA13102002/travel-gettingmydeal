@@ -367,11 +367,11 @@ SticyCallButton.on('value', (snapshot) => {
     const data = snapshot.val();
     if (data['display'] == "true") {
         if (screen.width < "900") {
-            document.getElementById("enquiry").style.display = "block"
+            document.getElementById("Mobile_Number_9").style.display = "block"
         }
     }
     else {
-        document.getElementById("enquiry").style.display = "none";
+        document.getElementById("Mobile_Number_9").style.display = "none";
     }
 });
 // ==============================Sticky call Button Visibility function end======================================================
