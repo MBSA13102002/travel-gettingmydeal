@@ -405,6 +405,7 @@ MobileNumber.on('value', (snapshot) => {
    document.getElementById("Mobile_Number_3").href="tel:"+num.substring(num.length - 10)
    document.getElementById("Mobile_Number_4").href="tel:"+num.substring(num.length - 10)
    document.getElementById("Mobile_Number_5").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
    
 });
 // ==============================Mobile Number function end======================================================
