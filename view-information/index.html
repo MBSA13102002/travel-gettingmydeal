@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="/css/bootstrap.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel=stylesheet>
-   <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
-   <link href='https://fonts.googleapis.com/css?family=Yeseva One|Trispace|Alatsi|Actor' rel=stylesheet>
-   <link rel=stylesheet href=/css/index.css>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel=stylesheet>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
+    <link href='https://fonts.googleapis.com/css?family=Yeseva One|Trispace|Alatsi|Actor' rel=stylesheet>
+    <link rel=stylesheet href=/css/index.css>
 
     <title>View Information</title>
-  </head>
-  <style>
+</head>
+<style>
     .btn-custom {
         background-color: #a98f6e;
         color: black
@@ -81,7 +82,8 @@
         }
     }
 </style>
-  <body>
+
+<body>
     <center>
         <div class="animate__animated animate__backInLeft card container more_imp my-5" id=splash
             style=width:18rem;;height:35rem;display:none;background-color:#040A3E>
@@ -98,7 +100,8 @@
                     </div>
                     <div class="row my-4 mx-3">
                         <a class="col" href=tel:9560252011
-                            style="background-color:#E71436;color:white;font-size:30px;padding:5%" onclick="Call_Clicks()"><b>
+                            style="background-color:#E71436;color:white;font-size:30px;padding:5%"
+                            onclick="Call_Clicks()"><b>
                                 (+91)9560252011</b></a>
                         <a class="col-md-12 " href=tel:9560252011 onclick="Call_Clicks()">
                             <h4 class="col-md-12 " style="font-family:Almarai;color:gray;">24x7 Customer Service
@@ -119,7 +122,7 @@
                     </a>
                 </a>
             </center>
-            
+
             <img src="/images/logo_2.jpeg" width="250" height="60" style="margin-left:0;margin-right:auto;"
                 class="bi bi-telephone ">
         </div>
@@ -129,7 +132,7 @@
             style=width:18rem;display:none;height:29rem;background-color:#040A3E>
             <center>
                 <span type=button id=close style="position:relative;float:right;color:white"
-                    onclick=Remove_Processed_Popup() >x</span>
+                    onclick=Remove_Processed_Popup()>x</span>
                 <a href=tel:9560252011 onclick="Call_Clicks()">
                     <div class=row>
                         <h4 class="col-md-12 my-3" style="font-family:Yeseva One ;color:white">Our Experts will get in
@@ -138,14 +141,16 @@
                     </div>
 
                     <a href=tel:9560252011 onclick="Call_Clicks()">
-                    <div class="row ">
-                        <img src="/images/call.png" width="57" height="57" style="border-radius:18px;margin-left:auto;margin-right:auto;"
-                        class="bi bi-telephone my-2">
-                        <h6 class="col-md-12 " style="font-family:Yeseva One ;color:white">Call at +91-9560252011 <br>
-                        </h6>
+                        <div class="row ">
+                            <img src="/images/call.png" width="57" height="57"
+                                style="border-radius:18px;margin-left:auto;margin-right:auto;"
+                                class="bi bi-telephone my-2">
+                            <h6 class="col-md-12 " style="font-family:Yeseva One ;color:white">Call at +91-9560252011
+                                <br>
+                            </h6>
 
-                    </div>
-                </a>
+                        </div>
+                    </a>
 
                 </a>
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -169,7 +174,8 @@
                             <input type=email class=form-control name=new_email id="new_email"
                                 placeholder="Email Address">
                         </div>
-                        <button type=button style="background-color:#E71436;color:white" class="btn rounded-0 my-2 mx-3" onclick=New_Lead_Collection()>
+                        <button type=button style="background-color:#E71436;color:white" class="btn rounded-0 my-2 mx-3"
+                            onclick=New_Lead_Collection()>
                             SUBMIT</button>
                     </div>
                 </div>
@@ -180,522 +186,594 @@
         </div>
     </center>
     <div class=content id=main_content>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light" style="background-color: white;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/images/logo.jpeg" alt=""width="130" height="70"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Information</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Flights</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-font mx-1" aria-current="page" href="#">Hotels</a>
-                        </li>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light" style="background-color: white;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/images/logo.jpeg" alt="" width="130" height="70"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active my-font mx-1" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active my-font mx-1" aria-current="page" href="#">About Us</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active my-font mx-1" aria-current="page" href="/">Latest Updates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active my-font mx-1" aria-current="page" onclick="Scroll_Win_Footer()">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active my-font mx-1" aria-current="page" href="#">Hotels</a>
+                            </li> -->
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading my-font">1. Expedia Flight Change Policy.</h2>
+                    <p class="lead" style="font-family:Altasi">Expedia is becoming one of the booming travel portals in
+                        Asia. The reason is its easy and flexible travel services. The online flight change and
+                        cancellation process are advantageous for all the passengers. Expedia is partnered with many
+                        airlines to access various reservation options according to a passenger’s budget. Expedia has
+                        also changed and modified</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+
 
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <hr class="featurette-divider">
 
-        <div class="row featurette mx-1">
-          <div class="col-md-7">
-            <h2 class="featurette-heading my-font">1. Expedia Flight Change Policy.</h2>
-            <p class="lead" style="font-family:Altasi">Expedia is becoming one of the booming travel portals in Asia. The reason is its easy and flexible travel services. The online flight change and cancellation process are advantageous for all the passengers. Expedia is partnered with many airlines to access various reservation options according to a passenger’s budget. Expedia has also changed and modified</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL US</button></a>
-            
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading my-font">2. Qatar Airways Booking.</h2>
-            <p class="lead" style="font-family:Altasi">With Qatar Airways, you can manage your booking online by visiting Qatar airways.com’s “manage reservations” section. You get the option of changing the date of departure, time, and many other features that can be managed on Qatar Airways. Below, we have discussed some steps to manage your flight booking online, take a look.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80" role="img" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7">
-            <h2 class="featurette-heading my-font">3. Airlines Flight Change Policy.</h2>
-            <p class="lead" style="font-family:Altasi">United Airlines is frequently changing its flight change policy to create more flexibility for customers. With United airlines, you are allowed to make changes in your reservation as many times as you want by just paying the fare difference amount. With the updated policy dated January 1, 2021.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading my-font">2. Qatar Airways Booking.</h2>
+                    <p class="lead" style="font-family:Altasi">With Qatar Airways, you can manage your booking online by
+                        visiting Qatar airways.com’s “manage reservations” section. You get the option of changing the
+                        date of departure, time, and many other features that can be managed on Qatar Airways. Below, we
+                        have discussed some steps to manage your flight booking online, take a look.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80"
+                        role="img">
 
 
-        <div class="row featurette mx-1">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading my-font">4. Southwest is moving away.</h2>
-            <p class="lead" style="font-family:Altasi">Southwest Airlines consist of four fare class tickets – Business Select, Anytime, Wanna Get Away, and senior fare. Southwest Wanna Get away fare is one of the most interesting fare types of southwest airlines. The “wanna get away tickets” majorly belong to the economy category.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL US</button></a>
-            
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7 ">
-            <h2 class="featurette-heading my-font">5. Turkish Airlines arranging Booking </h2>
-            <p class="lead" style="font-family:Altasi">Turkish Airlines has many flexible travel options so that passengers can make numerous changes to their reservations. You can create unlimited changes to your reservation. These flexibilities are available until March 31, 2022, for tickets bought until December 31, 2021. In the Turkish airlines manage booking section, you can make changes to your cabin class.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80" role="img" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading my-font">6. Delta Skymiles Redemption.</h2>
-            <p class="lead" style="font-family:Altasi">The most recognizable way to use SkyMiles is using them in Delta-operated flights. There are many ways by which you treat yourself just by redeeming the SkyMiles. You can use them for upgrades on your flight.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading my-font">3. Airlines Flight Change Policy.</h2>
+                    <p class="lead" style="font-family:Altasi">United Airlines is frequently changing its flight change
+                        policy to create more flexibility for customers. With United airlines, you are allowed to make
+                        changes in your reservation as many times as you want by just paying the fare difference amount.
+                        With the updated policy dated January 1, 2021.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80">
 
 
-        <div class="row featurette mx-1">
-          <div class="col-md-7">
-            <h2 class="featurette-heading my-font">7. Delta Travel Funds.</h2>
-            <p class="lead" style="font-family:Altasi">With some of the ticket types, you can also get a cash refund to your original form of payment. When you cancel a delta flight that you booked with the travel funds, you have the option to get your funds back to your account along with the tax deductions.
-            </p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL US</button></a>
-            
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" >
-                
-    
-          </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading my-font">4. Southwest is moving away.</h2>
+                    <p class="lead" style="font-family:Altasi">Southwest Airlines consist of four fare class tickets –
+                        Business Select, Anytime, Wanna Get Away, and senior fare. Southwest Wanna Get away fare is one
+                        of the most interesting fare types of southwest airlines. The “wanna get away tickets” majorly
+                        belong to the economy category.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7 ">
+                    <h2 class="featurette-heading my-font">5. Turkish Airlines arranging Booking </h2>
+                    <p class="lead" style="font-family:Altasi">Turkish Airlines has many flexible travel options so that
+                        passengers can make numerous changes to their reservations. You can create unlimited changes to
+                        your reservation. These flexibilities are available until March 31, 2022, for tickets bought
+                        until December 31, 2021. In the Turkish airlines manage booking section, you can make changes to
+                        your cabin class.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80"
+                        role="img">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading my-font">6. Delta Skymiles Redemption.</h2>
+                    <p class="lead" style="font-family:Altasi">The most recognizable way to use SkyMiles is using them
+                        in Delta-operated flights. There are many ways by which you treat yourself just by redeeming the
+                        SkyMiles. You can use them for upgrades on your flight.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading my-font">7. Delta Travel Funds.</h2>
+                    <p class="lead" style="font-family:Altasi">With some of the ticket types, you can also get a cash
+                        refund to your original form of payment. When you cancel a delta flight that you booked with the
+                        travel funds, you have the option to get your funds back to your account along with the tax
+                        deductions.
+                    </p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading my-font">8. Delta elite Class.</h2>
+                    <p class="lead" style="font-family:Altasi">These are some of the most premium cabins to fly. Delta
+                        Airlines operates its First class flight service in most of the domestic and North American
+                        international destinations. For some flights business class and first class is one and the same
+                        thing.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80"
+                        role="img">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette mx-1">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading my-font">9. What Are the Routes Of Booking Delta Airlines First Class
+                        Tickets.</h2>
+                    <p class="lead" style="font-family:Altasi">The popular destinations that can be traveled on First
+                        class cabins with Delta Airlines are flights to las vegas, to Hawaii, to Honolulu, to Seattle,
+                        to lax, to JFK, Cancun, to MCO, to London, to Europe, to jamaica, to Japan, to Tokyo, to Paris,
+                        etc.</p>
+                    <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT
+                        US</button>
+                    <!-- <a href="tel:9560252011"><button class="btn btn-success m-1" onclick="Call_Clicks()">CALL
+                            US</button></a> -->
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border"
+                        width="400" height="400"
+                        src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
         </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading my-font">8. Delta elite Class.</h2>
-            <p class="lead" style="font-family:Altasi">These are some of the most premium cabins to fly. Delta Airlines operates its First class flight service in most of the domestic and North American international destinations. For some flights business class and first class is one and the same thing.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=860&q=80" role="img" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <div class="row featurette mx-1">
-          <div class="col-md-7">
-            <h2 class="featurette-heading my-font">9. What Are the Routes Of Booking Delta Airlines First Class Tickets.</h2>
-            <p class="lead" style="font-family:Altasi">The popular destinations that can be traveled on First class cabins with Delta Airlines are flights to las vegas, to Hawaii, to Honolulu, to Seattle, to lax, to JFK, Cancun, to MCO, to London, to Europe, to jamaica, to Japan, to Tokyo, to Paris, etc.</p>
-            <button class="btn m-1" style="background-color:#E71436;color:white" onclick=Lead_Form()>CONTACT US</button>
-            <a href="tel:9560252011"><button class="btn btn-success m-1"  onclick="Call_Clicks()">CALL US</button></a>
-          </div>
-          <div class="col-md-5">
-            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-border" width="400" height="400" src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-                
-    
-          </div>
-        </div>
-    
-        <hr class="featurette-divider">
-    
-        <!-- /END THE FEATURETTES -->
-    
+        <style>
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .footer-section {
+                background: #151414;
+                position: relative;
+            }
+
+            .footer-cta {
+                border-bottom: 1px solid #373636;
+            }
+
+            .single-cta i {
+                color: #ff5e14;
+                font-size: 30px;
+                float: left;
+                margin-top: 8px;
+            }
+
+            .cta-text {
+                padding-left: 15px;
+                display: inline-block;
+            }
+
+            .cta-text h4 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+
+            .cta-text span {
+                color: #757575;
+                font-size: 15px;
+            }
+
+            .footer-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            .footer-pattern img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 330px;
+                background-size: cover;
+                background-position: 100% 100%;
+            }
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+
+            .footer-logo img {
+                max-width: 200px;
+            }
+
+            .footer-text p {
+                margin-bottom: 14px;
+                font-size: 14px;
+                color: #7e7e7e;
+                line-height: 28px;
+            }
+
+            .footer-social-icon span {
+                color: #fff;
+                display: block;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .footer-social-icon a {
+                color: #fff;
+                font-size: 16px;
+                margin-right: 15px;
+            }
+
+            .footer-social-icon i {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 38px;
+                border-radius: 50%;
+            }
+
+            .facebook-bg {
+                background: #3B5998;
+            }
+
+            .twitter-bg {
+                background: #55ACEE;
+            }
+
+            .google-bg {
+                background: #DD4B39;
+            }
+
+            .footer-widget-heading h3 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 40px;
+                position: relative;
+            }
+
+            .footer-widget-heading h3::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+                height: 2px;
+                width: 50px;
+                background: #ff5e14;
+            }
+
+            .footer-widget ul li {
+                display: inline-block;
+                float: left;
+                width: 50%;
+                margin-bottom: 12px;
+            }
+
+            .footer-widget ul li a:hover {
+                color: #ff5e14;
+            }
+
+            .footer-widget ul li a {
+                color: #878787;
+                text-transform: capitalize;
+            }
+
+            .subscribe-form {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .subscribe-form input {
+                width: 100%;
+                padding: 14px 28px;
+                background: #2E2E2E;
+                border: 1px solid #2E2E2E;
+                color: #fff;
+            }
+
+            .subscribe-form button {
+                position: absolute;
+                right: 0;
+                background: #ff5e14;
+                padding: 13px 20px;
+                border: 1px solid #ff5e14;
+                top: 0;
+            }
+
+            .subscribe-form button i {
+                color: #fff;
+                font-size: 22px;
+                transform: rotate(-6deg);
+            }
+
+            .copyright-area {
+                background: #202020;
+                padding: 25px 0;
+            }
+
+            .copyright-text p {
+                margin: 0;
+                font-size: 14px;
+                color: #878787;
+            }
+
+            .copyright-text p a {
+                color: #ff5e14;
+            }
+
+            .footer-menu li {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .footer-menu li:hover a {
+                color: #ff5e14;
+            }
+
+            .footer-menu li a {
+                font-size: 14px;
+                color: #878787;
+            }
+        </style>
+        <footer class="footer-section" id="Footer_View">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <!-- <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Latest Updates</h4>
+                                    <span>Book Your Flight Now!!</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Contact us</h4>
+                                    <a href="tel:9560252011" onclick="Call_Clicks()"><span>+91-9560252011</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <a href="mailto:Booking@gettingyourdeal.com"><span>Booking@gettingyourdeal.com</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Important Links</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <a href="/T&C/" style=color:white>Terms & Conditions</a><br>
+                                    <a href="/privacy-policy/" style="color:white">Privacy Policy</a><br>
+                                    <a href="/Cancellation&Refund/" style="color:white">Cancellation and Refund Policy</a><br><br>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="/index.html">Book Flight</a></li>
+                                    <li><a onclick="Call_Clicks()" href="tel:9560252011">Call Us Now!!</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>NewsLetter</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Subscribe for update & Promotions</p>
+                                </div>
+                                <script>
+                                    function Subscribe() {
+                                        document.getElementById("subscribe_mail").value = ""
+                                    }
+                                </script>
+                                <div class="subscribe-form">
+
+                                    <input type="email" placeholder="Email Address" id="subscribe_mail">
+                                    <button style="color: white;" onclick="Subscribe()">Subscribe</button>
+
+                                </div>
+                                <div class="copyright-text my-2">
+                                    <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <center>
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
+                                </div>
+                            </center>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <style>
-      ul {
-          margin: 0px;
-          padding: 0px;
-      }
 
-      .footer-section {
-          background: #151414;
-          position: relative;
-      }
-
-      .footer-cta {
-          border-bottom: 1px solid #373636;
-      }
-
-      .single-cta i {
-          color: #ff5e14;
-          font-size: 30px;
-          float: left;
-          margin-top: 8px;
-      }
-
-      .cta-text {
-          padding-left: 15px;
-          display: inline-block;
-      }
-
-      .cta-text h4 {
-          color: #fff;
-          font-size: 20px;
-          font-weight: 600;
-          margin-bottom: 2px;
-      }
-
-      .cta-text span {
-          color: #757575;
-          font-size: 15px;
-      }
-
-      .footer-content {
-          position: relative;
-          z-index: 2;
-      }
-
-      .footer-pattern img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 330px;
-          background-size: cover;
-          background-position: 100% 100%;
-      }
-
-      .footer-logo {
-          margin-bottom: 30px;
-      }
-
-      .footer-logo img {
-          max-width: 200px;
-      }
-
-      .footer-text p {
-          margin-bottom: 14px;
-          font-size: 14px;
-          color: #7e7e7e;
-          line-height: 28px;
-      }
-
-      .footer-social-icon span {
-          color: #fff;
-          display: block;
-          font-size: 20px;
-          font-weight: 700;
-          font-family: 'Poppins', sans-serif;
-          margin-bottom: 20px;
-      }
-
-      .footer-social-icon a {
-          color: #fff;
-          font-size: 16px;
-          margin-right: 15px;
-      }
-
-      .footer-social-icon i {
-          height: 40px;
-          width: 40px;
-          text-align: center;
-          line-height: 38px;
-          border-radius: 50%;
-      }
-
-      .facebook-bg {
-          background: #3B5998;
-      }
-
-      .twitter-bg {
-          background: #55ACEE;
-      }
-
-      .google-bg {
-          background: #DD4B39;
-      }
-
-      .footer-widget-heading h3 {
-          color: #fff;
-          font-size: 20px;
-          font-weight: 600;
-          margin-bottom: 40px;
-          position: relative;
-      }
-
-      .footer-widget-heading h3::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -15px;
-          height: 2px;
-          width: 50px;
-          background: #ff5e14;
-      }
-
-      .footer-widget ul li {
-          display: inline-block;
-          float: left;
-          width: 50%;
-          margin-bottom: 12px;
-      }
-
-      .footer-widget ul li a:hover {
-          color: #ff5e14;
-      }
-
-      .footer-widget ul li a {
-          color: #878787;
-          text-transform: capitalize;
-      }
-
-      .subscribe-form {
-          position: relative;
-          overflow: hidden;
-      }
-
-      .subscribe-form input {
-          width: 100%;
-          padding: 14px 28px;
-          background: #2E2E2E;
-          border: 1px solid #2E2E2E;
-          color: #fff;
-      }
-
-      .subscribe-form button {
-          position: absolute;
-          right: 0;
-          background: #ff5e14;
-          padding: 13px 20px;
-          border: 1px solid #ff5e14;
-          top: 0;
-      }
-
-      .subscribe-form button i {
-          color: #fff;
-          font-size: 22px;
-          transform: rotate(-6deg);
-      }
-
-      .copyright-area {
-          background: #202020;
-          padding: 25px 0;
-      }
-
-      .copyright-text p {
-          margin: 0;
-          font-size: 14px;
-          color: #878787;
-      }
-
-      .copyright-text p a {
-          color: #ff5e14;
-      }
-
-      .footer-menu li {
-          display: inline-block;
-          margin-left: 20px;
-      }
-
-      .footer-menu li:hover a {
-          color: #ff5e14;
-      }
-
-      .footer-menu li a {
-          font-size: 14px;
-          color: #878787;
-      }
-  </style>
-  <footer class="footer-section" id="Footer_View">
-      <div class="container">
-          <div class="footer-cta pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fas fa-map-marker-alt"></i>
-                          <div class="cta-text">
-                              <h4>Latest Updates</h4>
-                              <span>Book Your Flight Now!!</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="fas fa-phone"></i>
-                          <div class="cta-text">
-                              <h4>Contact us</h4>
-                              <a href="tel:9560252011"><span>+91-9560252011</span></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                          <i class="far fa-envelope-open"></i>
-                          <div class="cta-text">
-                              <h4>Mail us</h4>
-                              <span>mbsa13102002@gmail.com</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Important Links</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <a href="/T&C/" style=color:white>Terms & Conditions</a><br>
-                            <a href="/privacy-policy/" style="color:white">Privacy Policy</a><br><br>
-                            
-                        </div>
-
-                    </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Useful Links</h3>
-                          </div>
-                          <ul>
-                              <li><a href="/index.html">Book Flight</a></li>
-                              <li><a onclick="Call_Clicks()" href="tel:9560252011">Call Us Now!!</a></li>
-
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>NewsLetter</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Subscribe for update & Promotions</p>
-                        </div>
-                        <script>
-                            function Subscribe(){
-                                document.getElementById("subscribe_mail").value=""
-                            }
-                        </script>
-                        <div class="subscribe-form">
-                      
-                                <input type="email" placeholder="Email Address" id="subscribe_mail">
-                                <button  style="color: white;" onclick="Subscribe()">Subscribe</button>
-                           
-                        </div>
-                        <div class="copyright-text my-2">
-                            <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
-                        </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="copyright-area">
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <center>
-                          <div class="copyright-text">
-                              <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
-                          </div>
-                      </center>
-
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </footer>
- </div>
-      
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
           <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         -->
-    </body>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyA3xblObcHdHdbU077OldlSCe82xg85MCw",
-            authDomain: "fir-chat-app-8571e.firebaseapp.com",
-            databaseURL: "https://fir-chat-app-8571e-default-rtdb.firebaseio.com",
-            projectId: "fir-chat-app-8571e",
-            storageBucket: "fir-chat-app-8571e.appspot.com",
-            messagingSenderId: "64196866352",
-            appId: "1:64196866352:web:0993e1e798f3c5275f98f5",
-            measurementId: "G-13L4Q9T6ZY"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-    <script src="/js/new_reticulated.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyA3xblObcHdHdbU077OldlSCe82xg85MCw",
+        authDomain: "fir-chat-app-8571e.firebaseapp.com",
+        databaseURL: "https://fir-chat-app-8571e-default-rtdb.firebaseio.com",
+        projectId: "fir-chat-app-8571e",
+        storageBucket: "fir-chat-app-8571e.appspot.com",
+        messagingSenderId: "64196866352",
+        appId: "1:64196866352:web:0993e1e798f3c5275f98f5",
+        measurementId: "G-13L4Q9T6ZY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script src="/js/new_reticulated.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </html>

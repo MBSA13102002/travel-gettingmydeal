@@ -103,6 +103,11 @@ function Call_Clicks() {
         amount: window.callclicks + 1,
     });
 }
+function Scroll_Win_Footer(){
+    document.getElementById('Footer_View').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
 let LeadForm_Clickable = firebase.database().ref("Visibility_Section").child("Lead-form_Clickable-form");
 LeadForm_Clickable.on('value', (snapshot) => {
     const data = snapshot.val();
