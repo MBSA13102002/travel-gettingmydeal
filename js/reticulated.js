@@ -28,7 +28,7 @@ function Lead_Form(){
         document.getElementById("main_content").classList.add("main_imp");
         document.getElementById('processed_splash').style.display = "block";
         if (screen.width < "900") {
-            document.getElementById("enquiry").style.display = "none"
+            document.getElementById("Mobile_Number_9").style.display = "none"
             }
         document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
