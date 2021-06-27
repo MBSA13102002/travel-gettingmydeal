@@ -400,11 +400,11 @@ let MobileNumber = firebase.database().ref("Content_Section").child("Tagline");
 MobileNumber.on('value', (snapshot) => {
     const data = snapshot.val();
     var num = data['number']
-   document.getElementById("Mobile_Number_1").href=num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_2").href=num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_3").href=num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_4").href=num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_5").href=num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_1").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_2").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_3").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_4").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_5").href="tel:"+num.substring(num.length - 10)
    
 });
 // ==============================Mobile Number function end======================================================
