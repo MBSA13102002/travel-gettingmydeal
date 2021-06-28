@@ -158,4 +158,5 @@ MobileNumber.on('value', (snapshot) => {
     document.getElementById("enquiry").href="tel:"+num.substring(num.length - 10)
     document.getElementById("Mobile_Number_7").innerHTML=num;
     document.getElementById("Mobile_Number_8").innerHTML=num;
+    document.getElementById("Mobile_Number_9").innerHTML=num;
 })
