@@ -414,6 +414,7 @@ MobileNumber.on('value', (snapshot) => {
    document.getElementById("Mobile_Number_10").innerHTML=num;
    document.getElementById("Mobile_Number_11").innerHTML=num;
    document.getElementById("Mobile_Number_8").innerHTML="Call us "+num
+   document.getElementById("Mobile_Number_12").innerHTML="Call us "+num
    document.getElementById("Mobile_Number_9").href="tel:"+num.substring(num.length - 10)
    
 });
