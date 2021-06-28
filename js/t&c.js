@@ -16,3 +16,15 @@ SticyCallButton.on('value', (snapshot) => {
         document.getElementById("enquiry").style.display = "none";
     }
 });
+// =======================================================================
+let MobileNumber = firebase.database().ref("Content_Section").child("Tagline");
+MobileNumber.on('value', (snapshot) => {
+    const data = snapshot.val();
+    var num = data['number']
+
+    document.getElementById("enquiry").href="tel:"+num.substring(num.length - 10)
+    document.getElementById("Mobile_Number").href="tel:"+num.substring(num.length - 10)
+    document.getElementById("Mobile_Number_1").innerHTML=num;
+    document.getElementById("Mobile_Number_2").innerHTML=num;
+   
+})
