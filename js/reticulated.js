@@ -103,6 +103,7 @@ function Search_Flight() {
                 document.getElementById("where_to").value = '';
                 document.getElementById("check_in_date").value = '';
                 document.getElementById("check_out_date").value = '';
+                document.getElementById("passengers").value='';
             }, 4000);
         }
         else {
