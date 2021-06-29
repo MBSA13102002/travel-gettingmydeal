@@ -1,3 +1,8 @@
+function Scroll_Win_Footer(){
+    document.getElementById('Footer_View').scrollIntoView({
+        behavior: 'smooth'
+      });
+}
 function Call_Clicks() {
     let CallClicks_New = firebase.database().ref("Call_Clicks_ViewInfo");
     CallClicks_New.set({
