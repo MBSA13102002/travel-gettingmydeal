@@ -114,7 +114,7 @@ function Search_Flight() {
                 if (screen.width < "900") {
                     document.getElementById("enquiry").style.display = "none"
                 }
-                document.getElementById("main_content").classList.add("main_imp");
+               
                 document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -124,7 +124,7 @@ function Search_Flight() {
                         window.scrollTo(scrollLeft, scrollTop);
                     };
                 // alert("Our Experts will get in touch with you soon!!!")
-            
+                document.getElementById("main_content").classList.add("main_imp");
                 document.getElementById("block_chain").style.display = "block";
                 document.getElementById("where_from").value = '';
                 document.getElementById("where_to").value = '';
