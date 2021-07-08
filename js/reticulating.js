@@ -112,7 +112,7 @@ function Search_Flight() {
                 document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
                 document.getElementById('processed_splash').style.display = "block";
                 if (screen.width < "900") {
-                    document.getElementById("enquiry").style.display = "none"
+                    document.getElementById("Mobile_Number_9").style.display = "none"
                 }
                
                 document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
