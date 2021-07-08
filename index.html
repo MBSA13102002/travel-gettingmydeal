@@ -1,1132 +1,509 @@
 <!doctype html>
 <html lang=en>
-
 <head>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href=images/logo_tab.ico type=image/x-icon>
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel=stylesheet>
-    <link href='https://fonts.googleapis.com/css?family=Yeseva One|Trispace|Alatsi|Actor|Almarai|ABeeZee'
-        rel=stylesheet>
-    <link rel=stylesheet href=/css/bootstrap.min.css>
-    <script src="js/jquery.min.js"></script>
-    <link rel=stylesheet href=/css/style.css>
-    <link rel=stylesheet href=/css/datepicker.css>
-    <link rel=stylesheet href="css/bootstrap.min.css">
-    <script src="js/date-picker.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js
-        integrity=sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4
-        crossorigin=anonymous></script>
-
-    <title>Getting My Deal</title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href=images/logo_tab.ico type=image/x-icon>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel=stylesheet>
+<link href='https://fonts.googleapis.com/css?family=Yeseva One|Trispace|Alatsi|Actor|Almarai|ABeeZee' rel=stylesheet>
+<link rel=stylesheet href=/css/bootstrap.min.css>
+<script src=js/jquery.min.js></script>
+<link rel=stylesheet href=/css/style.css>
+<link rel=stylesheet href=/css/datepicker.css>
+<link rel=stylesheet href=css/bootstrap.min.css>
+<script src=js/date-picker.js></script>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js integrity=sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 crossorigin=anonymous></script>
+<title>Getting My Deal</title>
 </head>
-
 <script type=text/javascript>$(document).ready(()=>{$(".dropdown-menu").val("0");});</script>
-<style>
-    /* GLOBAL STYLES
--------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-        /*padding-top: 3rem;
-        padding-bottom: 3rem;*/
-        color: #5a5a5a;
-    }
-
-
-    /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-
-    /* Carousel base class */
-    .carousel {
-        margin-bottom: 4rem;
-    }
-
-    /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-        bottom: 3rem;
-        z-index: 10;
-    }
-
-    /* Declare heights because of positioning of img element */
-    .carousel-item {
-        height: 32rem;
-    }
-
-    .carousel-item>img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 32rem;
-    }
-
-
-    /* MARKETING CONTENT
-  -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .col-lg-4 {
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
-    .marketing h2 {
-        font-weight: 400;
-    }
-
-    /* rtl:begin:ignore */
-    .marketing .col-lg-4 p {
-        margin-right: .75rem;
-        margin-left: .75rem;
-    }
-
-    /* rtl:end:ignore */
-
-
-    /* Featurettes
-  ------------------------- */
-
-    .featurette-divider {
-        margin: 5rem 0;
-        /* Space out the Bootstrap <hr> more */
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-        font-weight: 300;
-        line-height: 1;
-        /* rtl:remove */
-        letter-spacing: -.05rem;
-    }
-
-
-    /* RESPONSIVE CSS
-  -------------------------------------------------- */
-
-    @media (min-width: 40em) {
-
-        /* Bump up size of carousel content */
-        .carousel-caption p {
-            margin-bottom: 1.25rem;
-            font-size: 1.25rem;
-            line-height: 1.4;
-        }
-
-        .featurette-heading {
-            font-size: 50px;
-        }
-    }
-
-    @media (min-width: 62em) {
-        .featurette-heading {
-            margin-top: 7rem;
-        }
-    }
-</style>
-<style>
-    .btn-custom {
-        background-color: #a98f6e;
-        color: black
-    }
-
-    .my-font {
-        font-family: Yeseva One
-    }
-
-    .my-font-new_1 {
-        font-size: 18px;
-        font-family: Yeseva One
-    }
-
-    .my-font-new_2 {
-        font-size: 14px;
-        font-family: Yeseva One
-    }
-
-    .my-font-new {
-        font-size: 13px;
-        font-family: Actor
-    }
-
-    .my_form {
-        border: 1px solid black;
-        border-radius: 20px
-    }
-
-    .my-border {
-        border-radius: 20px
-    }
-
-    .my-border-pic {
-        border-radius: 10px
-    }
-
-    .my-border-new {
-        padding: 10px;
-        border: 1px solid gray;
-        border-radius: 8px
-    }
-
-    .anchor {
-        color: white
-    }
-
-    .anchor:hover {
-        color: gray
-    }
-</style>
-<style>
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
-
-    @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
-    }
-</style>
-<!-- <body onload=Splash()> -->
-
-<body id="body_html">
-    <!-- =================================================5 second splash start======================================== -->
-    <center>
-        <div class="animate__animated animate__backInLeft card container more_imp my-5" id=splash
-            style=width:22rem;height:40rem;display:none;background-color:#040A3E>
-            <center>
-                <span type=button id=close style="position:relative;float:right;color:white"
-                    onclick=Remove_Popup()>x</span>
-                <a id="Mobile_Number_1" onclick="Call_Clicks()">
-                    <div class="row my-4">
-                        <h2 class="col-md-12 my-2" style="font-family:Almarai ;color:white;"><b>Call For
-                                Reservation</b>
-                        </h2>
-                        <h4 class="col-md-12 my-3" style="font-family:Almarai;color:gray;">Refunds, Cancellation, Fee
-                            Waivers and all<br>other Travel enquiry call us now.</h4>
-                    </div>
-                    <div class="row mx-3">
-                        <a id="Mobile_Number_2" class="col"
-                            style="background-color:#E71436;color:white;font-size:20px;padding:5%"
-                            onclick="Call_Clicks()"><b id="Mobile_Number_11">
-                            </b></a><br>
-                        <a id="Mobile_Number_3" class="col-md-12 my-3" onclick="Call_Clicks()">
-                            <h4 class="col-md-12 my-5" style="font-family:Almarai;color:gray;">24x7 Customer Service
-                            </h4>
-                            <h5 class="col-md-12 my-5" id="tagline_new" style="font-family:ABeeZee;color:white;">
-                            </h5>
-                        </a>
-                    </div>
-
-                </a>
-            </center>
-
-            <img src="/images/logo_2.jpeg" width="100" height="30" style="margin-left:auto;margin-right:0;"
-                class="bi bi-telephone">
-        </div>
-    </center>
-
-    <!-- =================================================5 second splash end======================================== -->
-    <!-- =================================================lead form start======================================== -->
-    <center>
-        <div class="animate__animated animate__backInLeft card container more_imp my-5" id="processed_splash"
-            style=width:18rem;display:none;height:29rem;background-color:#040A3E>
-            <center>
-                <span type=button id=close style="position:relative;float:right;color:white"
-                    onclick=Remove_Processed_Popup()>x</span>
-                <a id="Mobile_Number_4" onclick="Call_Clicks()">
-                    <div class=row>
-                        <h4 class="col-md-12 my-3" style="font-family:Yeseva One ;color:white">Our Experts will get in
-                            touch with you soon <br>
-                        </h4>
-                    </div>
-
-
-                    <div class="row ">
-                        <img src="/images/call.png" width="57" height="57"
-                            style="border-radius:18px;margin-left:auto;margin-right:auto;" class="bi bi-telephone my-2">
-                        <h6 id="Mobile_Number_8" class="col-md-12 " style="font-family:Yeseva One ;color:white"><br>
-                        </h6>
-
-                    </div>
-
-                </a>
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json" background="transparent"
-                    id="new_success" speed="1" style="width: 200px; height: 200px;display:none;" class="mx-4" loop
-                    autoplay></lottie-player>
-                <div id="new_entries">
-                    <div class="row mx-3">
-                        <div class="col-md-12 form-group my-1">
-                            <input type=text class=form-control name=email id=new_name placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="row mx-3">
-                        <div class="col-md-12 form-group my-1">
-                            <input type=text class=form-control name=number id="new_phone_number"
-                                placeholder="Phone Number">
-                        </div>
-                    </div>
-                    <div class="row mx-3">
-                        <div class="col-md-12 form-group my-1">
-                            <input type=email class=form-control name=new_email id="new_email"
-                                placeholder="Email Address">
-                        </div>
-                        <button style="background-color:#E71436;color:white" type=button class="btn rounded-0 my-2 mx-3"
-                            onclick=New_Lead_Collection()>
-                            SUBMIT</button>
-                    </div>
-                </div>
-
-
-
-            </center>
-        </div>
-    </center>
-    <!-- =================================================lead form end======================================== -->
-    <!-- =================================================Non-Clickable call form start======================================== -->
-    <center>
-        <div class="animate__animated animate__backInLeft card container more_imp my-5" id="call_processed_splash"
-            style=width:22rem;display:none;height:42rem;background-color:#040A3E>
-            <center>
-                <span type=button id=close style="position:relative;float:right;color:white"
-                onclick=Call_Remove_Processed_Popup()>x</span>
-                <a id="Mobile_Number_13">
-
-                    <div class=row>
-                        <img src="/images/logo_2.jpeg" class="my-4" alt="" style="border-radius:10px;margin-left:27%"
-                            width="150" height="50">
-                        <h4 class="col-md-12 mx-3 my-5" style="font-family:Yeseva One ;color:white">Our Experts will get
-                            in
-                            touch with you soon <br>
-                        </h4>
-                    </div>
-                    <div class=row>
-                        <div class="col">
-                            <p style="color:white" id="from" class="my-font"></p>
-                            <p style="color:white" id="check_in" class="my-font"></p><br><br>
-                            <p style="color:white" id="to" class="my-font"></p>
-                            <p style="color:white" id="check_out" class="my-font"></p>
-                        </div>
-                        <div class="col">
-                            <script
-                                src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_av00Bq.json"
-                                background="transparent" speed="2" style="width: 120px; height: 120px;color:white"
-                                class="my-5" loop autoplay></lottie-player>
-                        </div>
-                    </div>
-                    
-                    <div class="row ">
-                            <a id="Mobile_Number_14">
-                            <img src="/images/call.png" width="57" height="57"
-                                style="border-radius:18px;margin-left:70%" class="bi bi-telephone my-2">
-                            <h6 class="col-md-12 " id="Mobile_Number_12"
-                                style="font-family:Yeseva One ;color:white;margin-left:35%"><br>
-                            </h6>
-                        </a>
-                            <a id="Mobile_Number_5" style="margin-left:23%"><button class="btn btn-success"
-                                    onclick="Call_Clicks()">CALL US RIGHT NOW!</button></a>
-
-        </div>
-
-        </a>
-
-
-    </center>
-    </div>
-    </center>
-    <!-- =================================================Clickable call form end======================================= -->
-
-    <div class=content id=main_content>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light" style="background-color: white;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html"><img src="/images/logo.jpeg" alt="" width="130"
-                            height="70"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active my-font mx-1" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active my-font mx-1" aria-current="page"
-                                    onclick="Scroll_Win_About()">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active my-font mx-1" aria-current="page"
-                                    href="/view-information/">Latest Updates</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active my-font mx-1" aria-current="page"
-                                    onclick="Scroll_Win_Footer()">Contact Us</a>
-                            </li>
-
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class=container>
-            <div class="row justify-content-center">
-                <div class=col-md-10>
-                    <div class="row justify-content-center" id="Search">
-                        <div class=col-md-6>
-                            <img src=https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
-                                alt="Image" class="img-fluid my-border" id="Main_Image"
-                                style="width:500px;height:150px;">
-                        </div>
-                        <div class="col-md-6 my-2">
-
-                            <div class=my_form>
-                                <div class="row mx-3">
-                                    <h3 class="col-md-12 my-3" style="font-family:Yeseva One">Book Your Flight Now!!
-                                    </h3>
-                                </div>
-                                <!-- ==============================lottie animation start==================== -->
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_oWDUsO.json"
-                                    background="transparent" speed="1" style="width:300px;height:300px;display:none"
-                                    class="mx-5" loop autoplay id="search_process"></lottie-player> -->
-                                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_j3ndxy3v.json"
-                                    background="transparent" speed="1" style="width:300px;height:300px;display:none;"
-                                    class="mx-5" loop autoplay id="search_process"></lottie-player>
-                                <!-- ================================lottie animation end===================== -->
-                                <script
-                                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json"
-                                    background="transparent" id="success" speed="1"
-                                    style="width: 200px; height: 200px;display:none;" class="mx-5" loop autoplay>
-                                </lottie-player>
-
-                                <div id=block_chain>
-                                    <div class="row mx-3">
-                                        <div class="col-md-12 form-group">
-                                            <input type=text class=form-control id=where_from placeholder="Where From:">
-                                        </div>
-                                    </div>
-                                    <div class="row mx-3">
-                                        <div class="col-md-12 form-group">
-                                            <input type=text class=form-control id=where_to placeholder="Where To:">
-                                        </div>
-                                    </div>
-                                    <div class="row mx-3">
-                                        <div class="col-md-12 form-group">
-                                            <input type=number class=form-control id=passengers
-                                                placeholder="No. of Passengers">
-                                        </div>
-                                    </div>
-
-                                    <div class="row mx-3">
-                                        <div class="col-md-12 form-group my-1">
-                                            <input type=text class=form-control data-provide="datepicker"
-                                                id="check_in_date" placeholder="Check In Date:">
-                                        </div>
-                                    </div>
-                                    <div class="row mx-3">
-                                        <div class="col-md-12 form-group my-1">
-                                            <input type=text class=form-control data-provide="datepicker"
-                                                id="check_out_date" placeholder="Check Out Date:">
-
-                                        </div>
-                                        <button style="background-color:#E71436;color:white"
-                                            class="btn rounded-0 my-font my-2 mx-3" onclick=Search_Flight()>
-                                            SUBMIT</button>
-                                    </div>
-                                    <div class="row mx-3">
-                                        <p class=col-md-12> By submitting this form, you agree to the privacy policy &
-                                            terms
-                                            and
-                                            conditions</p>
-                                    </div>
-                                </div>
-
-                                <script type="text/javascript">
-                                    $(document).ready(function () {
-                                        $('#datepicker').datepicker();
-                                    });
-                                </script>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class=featurette-divider>
-        <div class="container marketing">
-            <h1 class="text-center my-font my-5 " style="color:gray">Find Your Best Deals Here</h1>
-            <!-- <p class="text-muted text-center my-font my-5 ">Upto 30% OFF only on Call or Chat.</p> -->
-            <div class="row">
-                <div class="col-lg-4 new_border">
-                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
-                        src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
-                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <h2 class="my-font my-1">London to Paris</h2>
-                    <p><a style="background-color:#E71436;color:white;font-family:Yeseva One;" class="btn"
-                            href="/view-information/">View
-                            Information &raquo;</a></p>
-                    <p><a class="btn btn-success" onclick="Lead_Form()"
-                            style="color:white;font-family:Yeseva One;">Contact Us</a></p>
-                </div>
-                <div class="col-lg-4 new_border">
-                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
-                        src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
-                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <h2 class="my-font my-1">Las Vegas to Cancun</h2>
-                    <p><a style="background-color:#E71436;color:white;font-family:Yeseva One;" class="btn"
-                            href="/view-information/">View
-                            Information &raquo;</a></p>
-                    <p><a class="btn btn-success" onclick="Lead_Form()"
-                            style="color:white;font-family:Yeseva One;">Contact Us</a></p>
-                </div>
-                <div class="col-lg-4 new_border">
-                    <img class="bd-placeholder-img rounded-circle" width="220" height="220"
-                        src="https://images.unsplash.com/photo-1597885888562-560a47b5a994?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-                        role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <h2 class="my-font my-1">New York to Dallas</h2>
-
-                    <p><a style="background-color:#E71436;color:white;font-family:Yeseva One;" class="btn"
-                            href="/view-information/">View
-                            Information &raquo;</a></p>
-                    <p><a class="btn btn-success" onclick="Lead_Form()"
-                            style="color:white;font-family:Yeseva One;">Contact Us</a></p>
-                </div>
-            </div>
-        </div>
-
-
-        <main>
-            <h1 id="tagline" class="text-center my-font my-5 " style="color:gray"></h1>
-            <p class="text-muted text-center my-font m-5">Fares are round trip, Fares incl. all fuel surcharges, our
-                service fees and taxes.<br> Book 21 days in advance.A minimum Saturday night stay may be required.
-                Displayed fares <br>are based on historical data, are subject to change and cannot be guaranteed<br> at
-                the time of booking.</p>
-            <div class="album py-5 bg-light">
-                <div class="container">
-                    <div class="row mx-1 px-1">
-                        <div class="col">
-                            <div class="card shadow-sm my-2">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
-                                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                    focusable="false">
-                                <div class="card-body">
-                                    <h3 class="card-text my-font">New Deals Every Day</h3>
-                                    <p class="card-text">We have negotiated with every major airline to pass the savings
-                                        on to you.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="/view-information/"><button
-                                                    style="background-color:#E71436;color:white;font-family:Yeseva One;"
-                                                    class="btn
-                                            ">Latest Updates</button></a>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                style="visibility:hidden;">Edit</button>
-                                        </div>
-                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm my-2">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    src="https://images.unsplash.com/photo-1534374950034-3644ddb72710?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                    focusable="false">
-
-
-
-                                <div class="card-body">
-                                    <h3 class="card-text my-font">Simple & Easy</h3>
-                                    <p class="card-text">No more waiting to get your e-tickets , reschedules ,
-                                        cancellations and much more.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="/view-information/"><button
-                                                    style="background-color:#E71436;color:white;font-family:Yeseva One;"
-                                                    class="btn
-                                            ">Latest Updates</button></a>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                style="visibility:hidden;">Edit</button>
-                                        </div>
-                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm my-2">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    src="https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                                    role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                    focusable="false">
-
-
-
-                                <div class="card-body">
-                                    <h3 class="card-text my-font">We Know Flights</h3>
-                                    <p class="card-text">Be served by flight experts with an experience of more than 10
-                                        years.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="/view-information/"><button
-                                                    style="background-color:#E71436;color:white;font-family:Yeseva One;"
-                                                    class="btn
-                                            ">Latest Updates</button></a>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary"
-                                                style="visibility:hidden;">Edit</button>
-                                        </div>
-                                        <small class="text-muted" style="visibility:hidden;">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="container" id="About_Us">
-                <h1 class="text-center my-font" style="color:gray">About Us</h1>
-                <hr>
-                <p class="text-muted text-center my-font  ">Getting your Deal is one of the largest companies providing
-                    services in United States. Getting Your Deal has risen from a small travel agency to one of the
-                    largest agencies in the USA , Canada and USA offering travel to the former various countries in
-                    Eastern Europe. We offer our clients discounted international airfare, complete vacation packages,
-                    telecommunications services. We also offer travel insurance.</p><br>
-                <p class="text-muted text-center my-font  ">During the past few years, we have been providing
-                    outstanding service and discount airfare from the USA to Europe, Latin America, Asia and Africa. Our
-                    wholesale buying power guarantees you the best rates on airlines such as Delta. We also offer our
-                    clients complete vacation packages to Mexico, Hawaii, and the Caribbean.</p>
-            </div>
-            <div class="container marketing">
-                <h1 class="text-center my-font" style="color:gray">Happy Clients</h1>
-                <p class="text-muted text-center my-font my-5 ">The Main Goal Of Our CompanyIs To Staisfy<br> Evey
-                    Client That
-                    Approaches Us.</p>
-
-                <div class="row justify-content-center p-2  my-3" style="background-color:#040A3E">
-
-                    <div class="card m-2" style="width: 17rem;">
-                        <div class="card-body my-border">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <p class="card-text my-font">“Best Service - They helped me in booking my ticket and
-                                acknowledged my needs.”</p>
-                            <figcaption class="blockquote-footer">
-                                Kathy Regenfuss <br><cite title="Source Title">Minneapolis</cite>
-                            </figcaption>
-                            <!-- <a href="#" class="card-link">Card link</a>
-                                        <a href="#" class="card-link">Another link</a> -->
-                        </div>
-                    </div>
-                    <div class="card m-2" style="width: 17rem;">
-                        <div class="card-body my-border">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <p class="card-text my-font">“Kathy helped me to check the best deal with reasonable
-                                pricesadn also helped me though out the process and helped me with extra meal discount.”
-                            </p>
-                            <figcaption class="blockquote-footer">
-                                Una James <br><cite title="Source Title">Miami</cite>
-                            </figcaption>
-                            <!-- <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a> -->
-                        </div>
-                    </div>
-                    <div class="card m-2" style="width: 17rem;">
-                        <div class="card-body my-border">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <p class="card-text my-font">“Alex found me the flight as per my convenience with the
-                                reasonable discounts 7 hours before the flight.”</p>
-                            <figcaption class="blockquote-footer">
-                                Giachinta <br><cite title="Source Title">Minneapolis</cite>
-                            </figcaption>
-                            <!-- <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a> -->
-                        </div>
-                    </div>
-                    <div class="card m-2" style="width: 17rem;">
-                        <div class="card-body my-border">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <p class="card-text my-font">“Exellent Service – One of the agent helped me in booking my
-                                ticket and acknowledged my exact needs.”</p>
-                            <figcaption class="blockquote-footer">
-                                Regenfuss <br><cite title="Source Title">Minneapolis</cite>
-                            </figcaption>
-                            <!-- <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a> -->
-                        </div>
-                    </div>
-                    <div class="card m-2" style="width: 17rem;">
-                        <div class="card-body my-border">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                            <p class="card-text my-font">“ Thankyou sir – I booked my trip to Africa quickly and drama
-                                free.Best Price for same flight”</p>
-                            <figcaption class="blockquote-footer">
-                                Japhe louis<br><cite title="Source Title"></cite>
-                            </figcaption>
-                            <!-- <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="card d" id="Review_View">
-
-                    <div class="card-header my-font">
-                        Review Section
-                    </div>
-                    <div class="card-body">
-                        <script
-                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json"
-                            background="transparent" id="submit_review" speed="1"
-                            style="width: 200px; height: 200px;display:none" loop autoplay></lottie-player>
-                        <div id="review_entries">
-                            <div class="row">
-                                <div class="col-md-12 form-group my-1">
-                                    <textarea type=text class=form-control id="Review"
-                                        placeholder="Write a Review..."></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 form-group my-1">
-                                    <input type=text class=form-control id="Review_Name" placeholder="Name">
-                                </div>
-                            </div>
-                            <button class="btn btn-dark my-font" onclick="Submit_Review()">SUBMIT</button>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="card my-2 " style="background-color:#040A3E">
-                    <div class="card-body">
-                        <center>
-                            <h2 style="font-family:Almarai ;color:white;">24/7 Reservation Helpline</h2>
-                            <p style="font-family:Almarai ;color:white;">Use our Fast Team* to book or reschedule your
-                                flight.</p>
-                            <a type="button" id="Mobile_Number_7" onclick="Call_Clicks()" class="btn p-2"
-                                style="background-color:#E71436;color:white;font-size:20px"></a>
-
-                        </center>
-
-                        </h2>
-                    </div>
-                </div>
-        </main>
-        <style>
-            ul {
-                margin: 0px;
-                padding: 0px;
-            }
-
-            .footer-section {
-                background: #151414;
-                position: relative;
-            }
-
-            .footer-cta {
-                border-bottom: 1px solid #373636;
-            }
-
-            .single-cta i {
-                color: #ff5e14;
-                font-size: 30px;
-                float: left;
-                margin-top: 8px;
-            }
-
-            .cta-text {
-                padding-left: 15px;
-                display: inline-block;
-            }
-
-            .cta-text h4 {
-                color: #fff;
-                font-size: 20px;
-                font-weight: 600;
-                margin-bottom: 2px;
-            }
-
-            .cta-text span {
-                color: #757575;
-                font-size: 15px;
-            }
-
-            .footer-content {
-                position: relative;
-                z-index: 2;
-            }
-
-            .footer-pattern img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 330px;
-                background-size: cover;
-                background-position: 100% 100%;
-            }
-
-            .footer-logo {
-                margin-bottom: 30px;
-            }
-
-            .footer-logo img {
-                max-width: 200px;
-            }
-
-            .footer-text p {
-                margin-bottom: 14px;
-                font-size: 14px;
-                color: #7e7e7e;
-                line-height: 28px;
-            }
-
-            .footer-social-icon span {
-                color: #fff;
-                display: block;
-                font-size: 20px;
-                font-weight: 700;
-                font-family: 'Poppins', sans-serif;
-                margin-bottom: 20px;
-            }
-
-            .footer-social-icon a {
-                color: #fff;
-                font-size: 16px;
-                margin-right: 15px;
-            }
-
-            .footer-social-icon i {
-                height: 40px;
-                width: 40px;
-                text-align: center;
-                line-height: 38px;
-                border-radius: 50%;
-            }
-
-            .facebook-bg {
-                background: #3B5998;
-            }
-
-            .twitter-bg {
-                background: #55ACEE;
-            }
-
-            .google-bg {
-                background: #DD4B39;
-            }
-
-            .footer-widget-heading h3 {
-                color: #fff;
-                font-size: 20px;
-                font-weight: 600;
-                margin-bottom: 40px;
-                position: relative;
-            }
-
-            .footer-widget-heading h3::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: -15px;
-                height: 2px;
-                width: 50px;
-                background: #ff5e14;
-            }
-
-            .footer-widget ul li {
-                display: inline-block;
-                float: left;
-                width: 50%;
-                margin-bottom: 12px;
-            }
-
-            .footer-widget ul li a:hover {
-                color: #ff5e14;
-            }
-
-            .footer-widget ul li a {
-                color: #878787;
-                text-transform: capitalize;
-            }
-
-            .subscribe-form {
-                position: relative;
-                overflow: hidden;
-            }
-
-            .subscribe-form input {
-                width: 100%;
-                padding: 14px 28px;
-                background: #2E2E2E;
-                border: 1px solid #2E2E2E;
-                color: #fff;
-            }
-
-            .subscribe-form button {
-                position: absolute;
-                right: 0;
-                background: #ff5e14;
-                padding: 13px 20px;
-                border: 1px solid #ff5e14;
-                top: 0;
-            }
-
-            .subscribe-form button i {
-                color: #fff;
-                font-size: 22px;
-                transform: rotate(-6deg);
-            }
-
-            .copyright-area {
-                background: #202020;
-                padding: 25px 0;
-            }
-
-            .copyright-text p {
-                margin: 0;
-                font-size: 14px;
-                color: #878787;
-            }
-
-            .copyright-text p a {
-                color: #ff5e14;
-            }
-
-            .footer-menu li {
-                display: inline-block;
-                margin-left: 20px;
-            }
-
-            .footer-menu li:hover a {
-                color: #ff5e14;
-            }
-
-            .footer-menu li a {
-                font-size: 14px;
-                color: #878787;
-            }
-        </style>
-        <footer class="footer-section" id="Footer_View">
-            <div class="container">
-                <div class="footer-cta pt-5 pb-5">
-                    <div class="row">
-                        <!-- <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="cta-text">
-                                    <h4>Latest Updates</h4>
-                                    <span>Book Your Flight Now!!</span>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="fas fa-phone"></i>
-                                <div class="cta-text">
-                                    <h4>Contact us</h4>
-                                    <a id="Mobile_Number_6" onclick="Call_Clicks()"><span id="Mobile_Number"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 mb-30">
-                            <div class="single-cta">
-                                <i class="far fa-envelope-open"></i>
-                                <div class="cta-text">
-                                    <h4>Mail us</h4>
-                                    <a
-                                        href="mailto:Booking@gettingyourdeal.com"><span>Booking@gettingyourdeal.com</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-content pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 mb-50">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Important Links</h3>
-                                </div>
-                                <div class="footer-text mb-25">
-                                    <a href="/T&C/" style=color:white>Terms & Conditions</a><br>
-                                    <a href="/privacy-policy/" style="color:white">Privacy Policy</a><br>
-                                    <a href="/Cancellation&Refund/" style="color:white">Cancellation and Refund
-                                        Policy</a><br><br>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <ul>
-                                    <li><a onclick="Scroll_Win_About()">About Us</a></li>
-                                    <li><a href="/view-information/">Latest Updates</a></li>
-                                    <li><a onclick="Scroll_Win_Review()">Review</a></li>
-                                    <li><a onclick="Scroll_Win_Search()">Book Flight</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                            <div class="footer-widget">
-                                <div class="footer-widget-heading">
-                                    <h3>NewsLetter</h3>
-                                </div>
-                                <div class="footer-text mb-25">
-                                    <p>Subscribe for update & Promotions</p>
-                                </div>
-                                <script>
-                                    function Subscribe() {
-                                        document.getElementById("subscribe_mail").value = ""
-                                    }
-                                </script>
-                                <div class="subscribe-form">
-
-                                    <input type="email" placeholder="Email Address" id="subscribe_mail">
-                                    <button style="color: white;" onclick="Subscribe()">Subscribe</button>
-
-                                </div>
-                                <div class="copyright-text my-2">
-                                    <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                            <center>
-                                <div class="copyright-text">
-                                    <p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
-                                </div>
-                            </center>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    </div>
-    <!-- <footer id=footer class="section footer" style="color:aliceblue">
-            <div class="card text-center bg-dark">
-                <div class=card-body style=color:antiquewhite>
-                    <a href=tel:9560252011><button type=button class="btn btn-success ">Call Now
-                            !</button></a>
-                    <p><a href=T&C class=anchor>Terms & Conditions</a> <a href="privacy policy" class=anchor>Privacy
-                            Policy</a> </p>
-                    <h5 class=card-title style=color:aliceblue;font-size:15px>Copyright <i>&#xa9</i> 2021
-                        Gettingyourdeal
-                        .All rights
-                        reserved
-                    </h5>
-
-                </div>
-        </footer> -->
-
-    <style>
-        .float {
-            position: fixed;
-            width: 100%;
-            height: 75px;
-            bottom: 0px;
-            right: 0px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 10;
-            box-shadow: 2px 2px 3px #999;
-
-            z-index: 100
-        }
-
-        .my-float {
-            color: white;
-            margin-top: 13px
-        }
-    </style>
-    <!-- <a class=float id="enquiry" onclick=Display_Popup() style="display:none"> -->
-    <a id="Mobile_Number_9" onclick="Call_Clicks()" class=float style="display:none;">
-
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" style="border:2px solid green;border-radius:18px"
-            fill="green" class="bi bi-telephone mx-5 my-3 p-1" viewBox="0 0 16 16">
-            <path
-                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-        </svg> -->
-        <div class="row">
-            <img src="/images/call.png" width="57" height="57" style="border-radius:18px"
-                class="bi bi-telephone my-2 ml-5">
-            <b class="my-float  p-1 my-1" style="font-size: 15px;"><span>Call and get Unpublished Deals!</span>
-                <p id="Mobile_Number_10" style="font-size:27px;"></p>
-            </b>
-
-        </div>
-    </a>
-    <!-- <script>setInterval(function () {
-            document.getElementById("enquiry").classList.add("animate__animated")
-            document.getElementById("enquiry").classList.add("animate__heartBeat")
-            setTimeout(function () {
-                document.getElementById("enquiry").classList.remove("animate__animated")
-                document.getElementById("enquiry").classList.remove("animate__heartBeat")
-            }, 1000);
-        }, 5000);</script> -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyA3xblObcHdHdbU077OldlSCe82xg85MCw",
-            authDomain: "fir-chat-app-8571e.firebaseapp.com",
-            databaseURL: "https://fir-chat-app-8571e-default-rtdb.firebaseio.com",
-            projectId: "fir-chat-app-8571e",
-            storageBucket: "fir-chat-app-8571e.appspot.com",
-            messagingSenderId: "64196866352",
-            appId: "1:64196866352:web:0993e1e798f3c5275f98f5",
-            measurementId: "G-13L4Q9T6ZY"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
-    <script src="/js/reticulated.js"></script>
-
-
-
+<style>body{color:#5a5a5a}.carousel{margin-bottom:4rem}.carousel-caption{bottom:3rem;z-index:10}.carousel-item{height:32rem}.carousel-item>img{position:absolute;top:0;left:0;min-width:100%;height:32rem}.marketing .col-lg-4{margin-bottom:1.5rem;text-align:center}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:.75rem;margin-left:.75rem}.featurette-divider{margin:5rem 0}.featurette-heading{font-weight:300;line-height:1;letter-spacing:-.05rem}@media(min-width:40em){.carousel-caption p{margin-bottom:1.25rem;font-size:1.25rem;line-height:1.4}.featurette-heading{font-size:50px}}@media(min-width:62em){.featurette-heading{margin-top:7rem}}</style>
+<style>.btn-custom{background-color:#a98f6e;color:black}.my-font{font-family:Yeseva One}.my-font-new_1{font-size:18px;font-family:Yeseva One}.my-font-new_2{font-size:14px;font-family:Yeseva One}.my-font-new{font-size:13px;font-family:Actor}.my_form{border:1px solid black;border-radius:20px}.my-border{border-radius:20px}.my-border-pic{border-radius:10px}.my-border-new{padding:10px;border:1px solid gray;border-radius:8px}.anchor{color:white}.anchor:hover{color:gray}</style>
+<style>.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media(min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}</style>
+<body id=body_html>
+<center>
+<div class="animate__animated animate__backInLeft card container more_imp my-5" id=splash style=width:22rem;height:40rem;display:none;background-color:#040A3E>
+<center>
+<span type=button id=close style=position:relative;float:right;color:white onclick=Remove_Popup()>x</span>
+<a id=Mobile_Number_1 onclick=Call_Clicks()>
+<div class="row my-4">
+<h2 class="col-md-12 my-2" style=font-family:Almarai;color:white><b>Call For
+Reservation</b>
+</h2>
+<h4 class="col-md-12 my-3" style=font-family:Almarai;color:gray>Refunds, Cancellation, Fee
+Waivers and all<br>other Travel enquiry call us now.</h4>
+</div>
+<div class="row mx-3">
+<a id=Mobile_Number_2 class=col style=background-color:#E71436;color:white;font-size:20px;padding:5% onclick=Call_Clicks()><b id=Mobile_Number_11>
+</b></a><br>
+<a id=Mobile_Number_3 class="col-md-12 my-3" onclick=Call_Clicks()>
+<h4 class="col-md-12 my-5" style=font-family:Almarai;color:gray>24x7 Customer Service
+</h4>
+<h5 class="col-md-12 my-5" id=tagline_new style=font-family:ABeeZee;color:white>
+</h5>
+</a>
+</div>
+</a>
+</center>
+<img src=/images/logo_2.jpeg width=100 height=30 style=margin-left:auto;margin-right:0 class="bi bi-telephone">
+</div>
+</center>
+<center>
+<div class="animate__animated animate__backInLeft card container more_imp my-5" id=processed_splash style=width:18rem;display:none;height:29rem;background-color:#040A3E>
+<center>
+<span type=button id=close style=position:relative;float:right;color:white onclick=Remove_Processed_Popup()>x</span>
+<a id=Mobile_Number_4 onclick=Call_Clicks()>
+<div class=row>
+<h4 class="col-md-12 my-3" style="font-family:Yeseva One;color:white">Our Experts will get in
+touch with you soon <br>
+</h4>
+</div>
+<div class=row>
+<img src=/images/call.png width=57 height=57 style=border-radius:18px;margin-left:auto;margin-right:auto class="bi bi-telephone my-2">
+<h6 id=Mobile_Number_8 class=col-md-12 style="font-family:Yeseva One;color:white"><br>
+</h6>
+</div>
+</a>
+<script src=https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js></script>
+<lottie-player src=https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json background=transparent id=new_success speed=1 style=width:200px;height:200px;display:none class=mx-4 loop autoplay></lottie-player>
+<div id=new_entries>
+<div class="row mx-3">
+<div class="col-md-12 form-group my-1">
+<input type=text class=form-control name=email id=new_name placeholder=Name>
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group my-1">
+<input type=text class=form-control name=number id=new_phone_number placeholder="Phone Number">
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group my-1">
+<input type=email class=form-control name=new_email id=new_email placeholder="Email Address">
+</div>
+<button style=background-color:#E71436;color:white type=button class="btn rounded-0 my-2 mx-3" onclick=New_Lead_Collection()>
+SUBMIT</button>
+</div>
+</div>
+</center>
+</div>
+</center>
+<center>
+<div class="animate__animated animate__backInLeft card container more_imp my-5" id=call_processed_splash style=width:22rem;display:none;height:42rem;background-color:#040A3E>
+<center>
+<span type=button id=close style=position:relative;float:right;color:white onclick=Call_Remove_Processed_Popup()>x</span>
+<a id=Mobile_Number_13>
+<div class=row>
+<img src=/images/logo_2.jpeg class=my-4 alt style=border-radius:10px;margin-left:27% width=150 height=50>
+<h4 class="col-md-12 mx-3 my-5" style="font-family:Yeseva One;color:white">Our Experts will get
+in
+touch with you soon <br>
+</h4>
+</div>
+<div class=row>
+<div class=col>
+<p style=color:white id=from class=my-font></p>
+<p style=color:white id=check_in class=my-font></p><br><br>
+<p style=color:white id=to class=my-font></p>
+<p style=color:white id=check_out class=my-font></p>
+</div>
+<div class=col>
+<script src=https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js></script>
+<lottie-player src=https://assets1.lottiefiles.com/packages/lf20_av00Bq.json background=transparent speed=2 style=width:120px;height:120px;color:white class=my-5 loop autoplay></lottie-player>
+</div>
+</div>
+<div class=row>
+<a id=Mobile_Number_14>
+<img src=/images/call.png width=57 height=57 style=border-radius:18px;margin-left:70% class="bi bi-telephone my-2">
+<h6 class=col-md-12 id=Mobile_Number_12 style="font-family:Yeseva One;color:white;margin-left:35%"><br>
+</h6>
+</a>
+<a id=Mobile_Number_5 style=margin-left:23%><button class="btn btn-success" onclick=Call_Clicks()>CALL US RIGHT NOW!</button></a>
+</div>
+</a>
+</center>
+</div>
+</center>
+<div class=content id=main_content>
+<header>
+<nav class="navbar navbar-expand-md navbar-light" style=background-color:white>
+<div class=container-fluid>
+<a class=navbar-brand href=/index.html><img src=/images/logo.jpeg alt width=130 height=70></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarCollapse>
+<ul class="navbar-nav nav ml-auto">
+<li class=nav-item>
+<a class="nav-link active my-font mx-1" aria-current=page href=/>Home</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active my-font mx-1" aria-current=page onclick=Scroll_Win_About()>About Us</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active my-font mx-1" aria-current=page href=/view-information/>Latest Updates</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active my-font mx-1" aria-current=page onclick=Scroll_Win_Footer()>Contact Us</a>
+</li>
+</div>
+</div>
+</nav>
+</header>
+<div class=container>
+<div class="row justify-content-center">
+<div class=col-md-10>
+<div class="row justify-content-center" id=Search>
+<div class=col-md-6>
+<img src=https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 alt=Image class="img-fluid my-border" id=Main_Image style=width:500px;height:150px>
+</div>
+<div class="col-md-6 my-2">
+<div class=my_form>
+<div class="row mx-3">
+<h3 class="col-md-12 my-3" style="font-family:Yeseva One">Book Your Flight Now!!
+</h3>
+</div>
+<script src=https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js></script>
+<lottie-player src=https://assets3.lottiefiles.com/packages/lf20_j3ndxy3v.json background=transparent speed=1 style=width:300px;height:300px;display:none class=mx-5 loop autoplay id=search_process></lottie-player>
+<script src=https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js></script>
+<lottie-player src=https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json background=transparent id=success speed=1 style=width:200px;height:200px;display:none class=mx-5 loop autoplay>
+</lottie-player>
+<div id=block_chain>
+<div class="row mx-3">
+<div class="col-md-12 form-group">
+<input type=text class=form-control id=where_from placeholder="Where From:">
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group">
+<input type=text class=form-control id=where_to placeholder="Where To:">
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group">
+<input type=number class=form-control id=passengers placeholder="No. of Passengers">
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group my-1">
+<input type=text class=form-control data-provide=datepicker id=check_in_date placeholder="Check In Date:">
+</div>
+</div>
+<div class="row mx-3">
+<div class="col-md-12 form-group my-1">
+<input type=text class=form-control data-provide=datepicker id=check_out_date placeholder="Check Out Date:">
+</div>
+<button style=background-color:#E71436;color:white class="btn rounded-0 my-font my-2 mx-3" onclick=Search_Flight()>
+SUBMIT</button>
+</div>
+<div class="row mx-3">
+<p class=col-md-12> By submitting this form, you agree to the privacy policy &
+terms
+and
+conditions</p>
+</div>
+</div>
+<script type=text/javascript>$(document).ready(function(){$('#datepicker').datepicker();});</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class=featurette-divider>
+<div class="container marketing">
+<h1 class="text-center my-font my-5" style=color:gray>Find Your Best Deals Here</h1>
+<div class=row>
+<div class="col-lg-4 new_border">
+<img class="bd-placeholder-img rounded-circle" width=220 height=220 src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" role=img preserveAspectRatio="xMidYMid slice" focusable=false>
+<h2 class="my-font my-1">London to Paris</h2>
+<p><a style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn href=/view-information/>View
+Information &raquo;</a></p>
+<p><a class="btn btn-success" onclick=Lead_Form() style="color:white;font-family:Yeseva One">Contact Us</a></p>
+</div>
+<div class="col-lg-4 new_border">
+<img class="bd-placeholder-img rounded-circle" width=220 height=220 src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80" role=img preserveAspectRatio="xMidYMid slice" focusable=false>
+<h2 class="my-font my-1">Las Vegas to Cancun</h2>
+<p><a style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn href=/view-information/>View
+Information &raquo;</a></p>
+<p><a class="btn btn-success" onclick=Lead_Form() style="color:white;font-family:Yeseva One">Contact Us</a></p>
+</div>
+<div class="col-lg-4 new_border">
+<img class="bd-placeholder-img rounded-circle" width=220 height=220 src="https://images.unsplash.com/photo-1597885888562-560a47b5a994?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" role=img preserveAspectRatio="xMidYMid slice" focusable=false>
+<h2 class="my-font my-1">New York to Dallas</h2>
+<p><a style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn href=/view-information/>View
+Information &raquo;</a></p>
+<p><a class="btn btn-success" onclick=Lead_Form() style="color:white;font-family:Yeseva One">Contact Us</a></p>
+</div>
+</div>
+</div>
+<main>
+<h1 id=tagline class="text-center my-font my-5" style=color:gray></h1>
+<p class="text-muted text-center my-font m-5">Fares are round trip, Fares incl. all fuel surcharges, our
+service fees and taxes.<br> Book 21 days in advance.A minimum Saturday night stay may be required.
+Displayed fares <br>are based on historical data, are subject to change and cannot be guaranteed<br> at
+the time of booking.</p>
+<div class="album py-5 bg-light">
+<div class=container>
+<div class="row mx-1 px-1">
+<div class=col>
+<div class="card shadow-sm my-2">
+<img class="bd-placeholder-img card-img-top" width=100% height=225 src="https://images.unsplash.com/photo-1517394834181-95ed159986c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80" role=img aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable=false>
+<div class=card-body>
+<h3 class="card-text my-font">New Deals Every Day</h3>
+<p class=card-text>We have negotiated with every major airline to pass the savings
+on to you.</p>
+<div class="d-flex justify-content-between align-items-center">
+<div class=btn-group>
+<a href=/view-information/><button style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn>Latest Updates</button></a>
+<button type=button class="btn btn-sm btn-outline-secondary" style=visibility:hidden>Edit</button>
+</div>
+<small class=text-muted style=visibility:hidden>9 mins</small>
+</div>
+</div>
+</div>
+</div>
+<div class=col>
+<div class="card shadow-sm my-2">
+<img class="bd-placeholder-img card-img-top" width=100% height=225 src="https://images.unsplash.com/photo-1534374950034-3644ddb72710?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" role=img aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable=false>
+<div class=card-body>
+<h3 class="card-text my-font">Simple & Easy</h3>
+<p class=card-text>No more waiting to get your e-tickets , reschedules ,
+cancellations and much more.</p>
+<div class="d-flex justify-content-between align-items-center">
+<div class=btn-group>
+<a href=/view-information/><button style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn>Latest Updates</button></a>
+<button type=button class="btn btn-sm btn-outline-secondary" style=visibility:hidden>Edit</button>
+</div>
+<small class=text-muted style=visibility:hidden>9 mins</small>
+</div>
+</div>
+</div>
+</div>
+<div class=col>
+<div class="card shadow-sm my-2">
+<img class="bd-placeholder-img card-img-top" width=100% height=225 src="https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" role=img aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable=false>
+<div class=card-body>
+<h3 class="card-text my-font">We Know Flights</h3>
+<p class=card-text>Be served by flight experts with an experience of more than 10
+years.</p>
+<div class="d-flex justify-content-between align-items-center">
+<div class=btn-group>
+<a href=/view-information/><button style="background-color:#e71436;color:white;font-family:Yeseva One" class=btn>Latest Updates</button></a>
+<button type=button class="btn btn-sm btn-outline-secondary" style=visibility:hidden>Edit</button>
+</div>
+<small class=text-muted style=visibility:hidden>9 mins</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=container id=About_Us>
+<h1 class="text-center my-font" style=color:gray>About Us</h1>
+<hr>
+<p class="text-muted text-center my-font">Getting your Deal is one of the largest companies providing
+services in United States. Getting Your Deal has risen from a small travel agency to one of the
+largest agencies in the USA , Canada and USA offering travel to the former various countries in
+Eastern Europe. We offer our clients discounted international airfare, complete vacation packages,
+telecommunications services. We also offer travel insurance.</p><br>
+<p class="text-muted text-center my-font">During the past few years, we have been providing
+outstanding service and discount airfare from the USA to Europe, Latin America, Asia and Africa. Our
+wholesale buying power guarantees you the best rates on airlines such as Delta. We also offer our
+clients complete vacation packages to Mexico, Hawaii, and the Caribbean.</p>
+</div>
+<div class="container marketing">
+<h1 class="text-center my-font" style=color:gray>Happy Clients</h1>
+<p class="text-muted text-center my-font my-5">The Main Goal Of Our CompanyIs To Staisfy<br> Evey
+Client That
+Approaches Us.</p>
+<div class="row justify-content-center p-2 my-3" style=background-color:#040A3E>
+<div class="card m-2" style=width:17rem>
+<div class="card-body my-border">
+<p class="card-text my-font">“Best Service - They helped me in booking my ticket and
+acknowledged my needs.”</p>
+<figcaption class=blockquote-footer>
+Kathy Regenfuss <br><cite title="Source Title">Minneapolis</cite>
+</figcaption>
+</div>
+</div>
+<div class="card m-2" style=width:17rem>
+<div class="card-body my-border">
+<p class="card-text my-font">“Kathy helped me to check the best deal with reasonable
+pricesadn also helped me though out the process and helped me with extra meal discount.”
+</p>
+<figcaption class=blockquote-footer>
+Una James <br><cite title="Source Title">Miami</cite>
+</figcaption>
+</div>
+</div>
+<div class="card m-2" style=width:17rem>
+<div class="card-body my-border">
+<p class="card-text my-font">“Alex found me the flight as per my convenience with the
+reasonable discounts 7 hours before the flight.”</p>
+<figcaption class=blockquote-footer>
+Giachinta <br><cite title="Source Title">Minneapolis</cite>
+</figcaption>
+</div>
+</div>
+<div class="card m-2" style=width:17rem>
+<div class="card-body my-border">
+<p class="card-text my-font">“Exellent Service – One of the agent helped me in booking my
+ticket and acknowledged my exact needs.”</p>
+<figcaption class=blockquote-footer>
+Regenfuss <br><cite title="Source Title">Minneapolis</cite>
+</figcaption>
+</div>
+</div>
+<div class="card m-2" style=width:17rem>
+<div class="card-body my-border">
+<p class="card-text my-font">“ Thankyou sir – I booked my trip to Africa quickly and drama
+free.Best Price for same flight”</p>
+<figcaption class=blockquote-footer>
+Japhe louis<br><cite title="Source Title"></cite>
+</figcaption>
+</div>
+</div>
+</div>
+<div class="card d" id=Review_View>
+<div class="card-header my-font">
+Review Section
+</div>
+<div class=card-body>
+<script src=https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js></script>
+<lottie-player src=https://assets10.lottiefiles.com/packages/lf20_P2WnqE.json background=transparent id=submit_review speed=1 style=width:200px;height:200px;display:none loop autoplay></lottie-player>
+<div id=review_entries>
+<div class=row>
+<div class="col-md-12 form-group my-1">
+<textarea type=text class=form-control id=Review placeholder="Write a Review..."></textarea>
+</div>
+</div>
+<div class=row>
+<div class="col-md-12 form-group my-1">
+<input type=text class=form-control id=Review_Name placeholder=Name>
+</div>
+</div>
+<button class="btn btn-dark my-font" onclick=Submit_Review()>SUBMIT</button>
+</div>
+</div>
+</div>
+<div class="card my-2" style=background-color:#040A3E>
+<div class=card-body>
+<center>
+<h2 style=font-family:Almarai;color:white>24/7 Reservation Helpline</h2>
+<p style=font-family:Almarai;color:white>Use our Fast Team* to book or reschedule your
+flight.</p>
+<a type=button id=Mobile_Number_7 onclick=Call_Clicks() class="btn p-2" style=background-color:#E71436;color:white;font-size:20px></a>
+</center>
+</h2>
+</div>
+</div>
+</main>
+<style>ul{margin:0;padding:0}.footer-section{background:#151414;position:relative}.footer-cta{border-bottom:1px solid #373636}.single-cta i{color:#ff5e14;font-size:30px;float:left;margin-top:8px}.cta-text{padding-left:15px;display:inline-block}.cta-text h4{color:#fff;font-size:20px;font-weight:600;margin-bottom:2px}.cta-text span{color:#757575;font-size:15px}.footer-content{position:relative;z-index:2}.footer-pattern img{position:absolute;top:0;left:0;height:330px;background-size:cover;background-position:100% 100%}.footer-logo{margin-bottom:30px}.footer-logo img{max-width:200px}.footer-text p{margin-bottom:14px;font-size:14px;color:#7e7e7e;line-height:28px}.footer-social-icon span{color:#fff;display:block;font-size:20px;font-weight:700;font-family:'Poppins',sans-serif;margin-bottom:20px}.footer-social-icon a{color:#fff;font-size:16px;margin-right:15px}.footer-social-icon i{height:40px;width:40px;text-align:center;line-height:38px;border-radius:50%}.facebook-bg{background:#3b5998}.twitter-bg{background:#55acee}.google-bg{background:#dd4b39}.footer-widget-heading h3{color:#fff;font-size:20px;font-weight:600;margin-bottom:40px;position:relative}.footer-widget-heading h3::before{content:"";position:absolute;left:0;bottom:-15px;height:2px;width:50px;background:#ff5e14}.footer-widget ul li{display:inline-block;float:left;width:50%;margin-bottom:12px}.footer-widget ul li a:hover{color:#ff5e14}.footer-widget ul li a{color:#878787;text-transform:capitalize}.subscribe-form{position:relative;overflow:hidden}.subscribe-form input{width:100%;padding:14px 28px;background:#2e2e2e;border:1px solid #2e2e2e;color:#fff}.subscribe-form button{position:absolute;right:0;background:#ff5e14;padding:13px 20px;border:1px solid #ff5e14;top:0}.subscribe-form button i{color:#fff;font-size:22px;transform:rotate(-6deg)}.copyright-area{background:#202020;padding:25px 0}.copyright-text p{margin:0;font-size:14px;color:#878787}.copyright-text p a{color:#ff5e14}.footer-menu li{display:inline-block;margin-left:20px}.footer-menu li:hover a{color:#ff5e14}.footer-menu li a{font-size:14px;color:#878787}</style>
+<footer class=footer-section id=Footer_View>
+<div class=container>
+<div class="footer-cta pt-5 pb-5">
+<div class=row>
+<div class="col-xl-4 col-md-4 mb-30">
+<div class=single-cta>
+<i class="fas fa-phone"></i>
+<div class=cta-text>
+<h4>Contact us</h4>
+<a id=Mobile_Number_6 onclick=Call_Clicks()><span id=Mobile_Number></span></a>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-md-4 mb-30">
+<div class=single-cta>
+<i class="far fa-envelope-open"></i>
+<div class=cta-text>
+<h4>Mail us</h4>
+<a href=mailto:Booking@gettingyourdeal.com><span>Booking@gettingyourdeal.com</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-content pt-5 pb-5">
+<div class=row>
+<div class="col-xl-4 col-lg-4 mb-50">
+<div class=footer-widget>
+<div class=footer-widget-heading>
+<h3>Important Links</h3>
+</div>
+<div class="footer-text mb-25">
+<a href=/T&C/ style=color:white>Terms & Conditions</a><br>
+<a href=/privacy-policy/ style=color:white>Privacy Policy</a><br>
+<a href=/Cancellation&Refund/ style=color:white>Cancellation and Refund
+Policy</a><br><br>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+<div class=footer-widget>
+<div class=footer-widget-heading>
+<h3>Useful Links</h3>
+</div>
+<ul>
+<li><a onclick=Scroll_Win_About()>About Us</a></li>
+<li><a href=/view-information/>Latest Updates</a></li>
+<li><a onclick=Scroll_Win_Review()>Review</a></li>
+<li><a onclick=Scroll_Win_Search()>Book Flight</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+<div class=footer-widget>
+<div class=footer-widget-heading>
+<h3>NewsLetter</h3>
+</div>
+<div class="footer-text mb-25">
+<p>Subscribe for update & Promotions</p>
+</div>
+<script>function Subscribe(){document.getElementById("subscribe_mail").value=""}</script>
+<div class=subscribe-form>
+<input type=email placeholder="Email Address" id=subscribe_mail>
+<button style=color:white onclick=Subscribe()>Subscribe</button>
+</div>
+<div class="copyright-text my-2">
+<p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=copyright-area>
+<div class=container>
+<div class=row>
+<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+<center>
+<div class=copyright-text>
+<p>Copyright &copy; 2021 Gettingyourdeal .All Right Reserved </p>
+</div>
+</center>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<style>.float{position:fixed;width:100%;height:75px;bottom:0;right:0;background-color:black;color:white;text-align:center;font-size:20px;font-weight:10;box-shadow:2px 2px 3px #999;z-index:100}.my-float{color:white;margin-top:13px}</style>
+<a id=Mobile_Number_9 onclick=Call_Clicks() class=float style=display:none>
+<div class=row>
+<img src=/images/call.png width=57 height=57 style=border-radius:18px class="bi bi-telephone my-2 ml-5">
+<b class="my-float p-1 my-1" style=font-size:15px><span>Call and get Unpublished Deals!</span>
+<p id=Mobile_Number_10 style=font-size:27px></p>
+</b>
+</div>
+</a>
+<script src=https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js></script>
+<script src=https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js></script>
+<script src=https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js></script>
+<script>var firebaseConfig={apiKey:"AIzaSyCzoTsGrez_fmdEafOo0JisZsIoWt1tMVQ",authDomain:"travel-website-fd79b.firebaseapp.com",projectId:"travel-website-fd79b",storageBucket:"travel-website-fd79b.appspot.com",messagingSenderId:"363429097219",appId:"1:363429097219:web:d61939049bcbd873508336",measurementId:"G-FHRRBMCLNR"};firebase.initializeApp(firebaseConfig);firebase.analytics();</script>
+<script src=/js/reticulating.js></script>
 </body>
-
 </html>

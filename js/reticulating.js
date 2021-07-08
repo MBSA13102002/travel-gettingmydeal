@@ -24,8 +24,8 @@ function Lead_Form(){
         window.confirmation = true;
     }
     else{
-        document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
         document.getElementById("main_content").classList.add("main_imp");
+        document.getElementById("processed_splash").classList.remove("animate__zoomOutDown");
         document.getElementById('processed_splash').style.display = "block";
         if (screen.width < "900") {
             document.getElementById("Mobile_Number_9").style.display = "none"
@@ -114,6 +114,7 @@ function Search_Flight() {
                 if (screen.width < "900") {
                     document.getElementById("enquiry").style.display = "none"
                 }
+                document.getElementById("main_content").classList.add("main_imp");
                 document.getElementById("processed_splash").style.top = (window.pageYOffset).toString() + 'px';
                 scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -123,12 +124,13 @@ function Search_Flight() {
                         window.scrollTo(scrollLeft, scrollTop);
                     };
                 // alert("Our Experts will get in touch with you soon!!!")
-                document.getElementById("main_content").classList.add("main_imp");
+            
                 document.getElementById("block_chain").style.display = "block";
                 document.getElementById("where_from").value = '';
                 document.getElementById("where_to").value = '';
                 document.getElementById("check_in_date").value = '';
                 document.getElementById("check_out_date").value = '';
+                document.getElementById("passengers").value = '';
             }, 4000)
 
         }
@@ -402,22 +404,22 @@ MobileNumber.on('value', (snapshot) => {
     const data = snapshot.val();
     var num = data['number']
     document.getElementById("Mobile_Number").innerHTML=num;
-   document.getElementById("Mobile_Number_1").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_2").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_3").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_4").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_5").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_6").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_7").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_13").href="tel:"+num.substring(num.length - 10)
-   document.getElementById("Mobile_Number_14").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_1").href="tel:"+num;
+   document.getElementById("Mobile_Number_2").href="tel:"+num;
+   document.getElementById("Mobile_Number_3").href="tel:"+num;
+   document.getElementById("Mobile_Number_4").href="tel:"+num;
+   document.getElementById("Mobile_Number_5").href="tel:"+num;
+   document.getElementById("Mobile_Number_6").href="tel:"+num;
+   document.getElementById("Mobile_Number_6").href="tel:"+num;
+   document.getElementById("Mobile_Number_7").href="tel:"+num;
+   document.getElementById("Mobile_Number_13").href="tel:"+num;
+   document.getElementById("Mobile_Number_14").href="tel:"+num;
    document.getElementById("Mobile_Number_7").innerHTML=num;
    document.getElementById("Mobile_Number_10").innerHTML=num;
    document.getElementById("Mobile_Number_11").innerHTML=num;
    document.getElementById("Mobile_Number_8").innerHTML="Call us "+num
    document.getElementById("Mobile_Number_12").innerHTML="Call us "+num
-   document.getElementById("Mobile_Number_9").href="tel:"+num.substring(num.length - 10)
+   document.getElementById("Mobile_Number_9").href="tel:"+num;
    
 });
 // ==============================Mobile Number function end======================================================
